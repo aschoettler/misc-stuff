@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Sandy Schoettler" />
+  <title>Project Builder 2B</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://aschoettler.github.io/misc-stuff/pandoc-1.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      fleqn: false
+     });
+  }}});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+  
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Project Builder 2B</h1>
+<p class="author">Sandy Schoettler</p>
+</header>
+<!-- Questions:
+- What genre is this text?
+- What kinds of arguments are made? Why?
+- What counts as evidence?
+- What research methods were used?
+- What/who is considered authoritative? Why?
+- Who is the audience? Why?
+- What kind of language/jargon is used? Why?
+- What are the citation standards? Why?
+- How does this text fit into the goals of the course syllabus?
+    Why did your teacher assign it? -->
+<p>In my class on computing over encrypted data, we read a journal article for class called “Replication is Not Needed: Single Database, Computationally-Private Information Retreival.” Before I can explain what that means, there’s some context to cover. People are starting to become more concerned about security. But the interest in rigorous security among experts in the field itself has been an intense focus for years. <!-- ideally convey increase among sec. too, like proportional or growing w/ pub. concern --> A contingent of research has been focused on the idea of accomplishing tasks without actually requiring computations to use un-encrypted data. Surprisingly, many tasks can be accomplished in this way. The genre of this paper is research articles for doing various tasks in a “privacy-preserving” manner, meaning that they aim to show methods for doing these tasks in a way that provably cannot expose sensitive data. <!-- Could benefit from more context -- almost EVERYTHING done nowadays is done using UNENCRYPTED data which means users inherently place a LOT of trust in apps, services & companies they engage with, and they con only hope those services will securely handle their info. But what if a rouge employee decides to inspect a database? What if an account gets hacked and attackers gain access to all the company's records?  What if the companies practices are risky on their own?
+These problems pose a potential risk that security experts aim to mitigate with the aid of 
+new protocols, an area of active research, which users can CONFIDENTLY trust, which accomplish the same or similar tasks they would expect a service to provide, but without even the POTENTIAL risk of a security breach. --> For example, the task of “Information Retrieval” is one involving two parties, say Alice and Bob. Bob keeps a list of values, indexed <span class="math inline">x_1, x_2, ...</span> etc. Alice wants Bob to send her one of the values, but its important to her that Bob not know which value she wanted. Its okay if Bob knows she’s getting <em>some</em> value from his list, but she wants to keep the <em>index</em> a secret. Prior to this article’s publishing, the best solution to this problem was to have Bob’s list stored in 2 copies on different servers, where the security mainly stemmed from the requirement that the 2 servers hosting the list not be allowed to communicate with one another. The purpose of this article was to introduce a new method which only requires <em>one</em> computer on Bob’s end, meaning Alice no longer has to worry about the risk of colluding servers in the prior scenario. This task is called “Private Information Retrieval,” and the security of the procedure for accomplishing this paper’s solution stems from an assumption that a particular mathematical problem is difficult to solve quickly. <!-- tradeoff of assumptions --> The main argument in the paper is that a certain math problem can only be solved efficiently if some other information is already known. And since only the user (Alice) knows the information, it is overwhelmingly likely that Bob cannot ‘guess’ the information himself. And in a nutshell, they argue that this protects Alice’s privacy. <!-- * Evidence --> Evidence in papers like this one include mathematical proofs, in this case based in number theory, other mathematical arguments involving probability theory (to prove that certain situations are to some extent ‘unlikely’), and often times empirical data testing the performance of an algorithm, though that is not used here. Often times the security of algorithms presented in articles in this genre rely on an assumption that a specific computation is hard to solve efficiently. When such an assumption is used by many articles over many years, with no apparent progress in finding efficient solutions, the hypothesis that that assumption is reasonable is repeatedly reaffirmed, simply by withstanding attempts to contradict it. In theory these are fundamentally <em>assumptions</em> and it is conceivable that other mathematical or computational techniques could be invented to break them, but standing the test of time often counts as robust evidence in the field. <!-- * Jargon --> There is jargon abound in the genre, and this paper is no exception. The stated “Main Result” of the paper is that “For every <span class="math inline">c &gt; 0</span> there exists a single-database <span class="math inline">\texttt{cPIR}</span> scheme with communication complexity <span class="math inline">O(n^c)</span>, assuming the hardness of deciding <em>quadratic residuosity</em>.” There are plenty of terms referencing other algorithms in prior work, and mathematical concepts which are used frequently. This raises the barrier of entry to understanding the field but also reaffirms that the audience is specifically people in and peripheral to the field who understand those concepts. <!-- * Course Relevance --> This article was relevant to the course because in the protocol, the user (Alice) sends Bob an encrypted version a request, and Bob uses that encrypted information to generate a response which he returns to Alice. But during the whole process, Bob never learns exactly what data Alice requested. So this algorithm is a great example of computing over encrypted data, which is what Bob does in this protocol.</p>
+<!-- * Goals of Discourse Community -->
+<p>The goals of the discourse community, and security research specifically, are to develop ways of performing tasks that people and users expect from services now, but to achieve those same applications in ways that can robustly protect users privacy. As security flaws have shown in recent years, data security and privacy are serious concerns, many of whom might not even know that their data might be at risk. But at the same time, the trend in this space of technology and in common culture is that people are becoming increasingly aware of and concerned about their data privacy, which fuels this active area of research with continued motivation and purpose.</p>
+<p><em>Works Cited</em></p>
+<p>1 E. Kushilevitz and R. Ostrovsky, “Replication is not needed: single database, computationally-private information retrieval,” Proceedings 38th Annual Symposium on Foundations of Computer Science, Miami Beach, FL, USA, 1997, pp. 364-373. doi: 10.1109/SFCS.1997.646125</p>
+<p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=646125&amp;isnumber=14088">IEEE URL link</a></p>
+</body>
+</html>
