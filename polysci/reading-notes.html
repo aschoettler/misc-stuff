@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Sandy Schoettler" />
-  <title>Polysci Notes</title>
+  <title>Polysci Reading Notes</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -13,8 +13,70 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="/Users/sandy/github/misc-stuff/mume-master/styles/prism_theme/github.css" />
+  <link rel="stylesheet" href="https://aschoettler.github.io/misc-stuff/markdown-css-master/github.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -30,12 +92,12 @@
 <style>
   .markdown-body {
     box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
+    min-width: 500px;
+    max-width: 25000px;
     margin: 0 auto;
     padding: 45px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 25000px) {
     .markdown-body {
       padding: 15px;
     }
@@ -44,7 +106,7 @@
 <article class="markdown-body">
 
 <header id="title-block-header">
-<h1 class="title">Polysci Notes</h1>
+<h1 class="title">Polysci Reading Notes</h1>
 <p class="author">Sandy Schoettler</p>
 </header>
 <ul>
@@ -83,7 +145,118 @@
 <li><a href="#chapter-10---public-opinion">Chapter 10 - Public Opinion</a></li>
 <li><a href="#links">Links</a></li>
 </ul>
-<p><strong>Assignments</strong> | Assignment | Status | Due | | ————————– | ——- | —- | | Read Ch 1 and start Ch 2 | working | 1/10 | | Finish Ch 2 and Ch 3 | todo | 1/15 | | Ch 4 | todo | 1/17 | | Ch 5 | todo | 1/22 | | Ch 7 | todo | 1/24 | | <strong>Prepare for Midterm 1</strong> | | 1/29 | | Ch 6 | todo | 1/31 | | Ch 8 | todo | 2/5 | | Ch 9 | todo | 2/7 | | Ch 10 | todo | 2/12 | | Start Ch 11 | todo | 2/14 | | Finish Ch 11 | todo | 2/19 | | <strong>Prepare for Midterm 2</strong> | | 2/21 | | Ch 12 | todo | 2/26 | | Ch 13 | todo | 2/28 | | VOTE IN DEMOCRATIC PRIMARY | todo | 3/3 | | Start Ch 14 | todo | 3/4 | | Finish Ch 14 | todo | 3/6 | | <strong>Term Paper Due</strong> 5PM | | 3/11 | | <strong>Prepare for Final Exam</strong> | | 3/19 |</p>
+<p><strong>Assignments</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Assignment</th>
+<th>Status</th>
+<th>Due</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Read Ch 1 and start Ch 2</td>
+<td>working</td>
+<td>1/10</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 2 and Ch 3</td>
+<td>reading</td>
+<td>1/15</td>
+</tr>
+<tr class="odd">
+<td>Ch 4</td>
+<td>reading</td>
+<td>1/17</td>
+</tr>
+<tr class="even">
+<td>Ch 5</td>
+<td>reading</td>
+<td>1/22</td>
+</tr>
+<tr class="odd">
+<td>Ch 7</td>
+<td>reading</td>
+<td>1/24</td>
+</tr>
+<tr class="even">
+<td><strong>Prepare for Midterm 1</strong></td>
+<td></td>
+<td>1/29</td>
+</tr>
+<tr class="odd">
+<td>Ch 6</td>
+<td>reading</td>
+<td>1/31</td>
+</tr>
+<tr class="even">
+<td>Ch 8</td>
+<td>reading</td>
+<td>2/5</td>
+</tr>
+<tr class="odd">
+<td>Ch 9</td>
+<td>reading</td>
+<td>2/7</td>
+</tr>
+<tr class="even">
+<td>Ch 10</td>
+<td>reading</td>
+<td>2/12</td>
+</tr>
+<tr class="odd">
+<td>Start Ch 11</td>
+<td>reading</td>
+<td>2/14</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 11</td>
+<td>reading</td>
+<td>2/19</td>
+</tr>
+<tr class="odd">
+<td><strong>Prepare for Midterm 2</strong></td>
+<td></td>
+<td>2/21</td>
+</tr>
+<tr class="even">
+<td>Ch 12</td>
+<td>reading</td>
+<td>2/26</td>
+</tr>
+<tr class="odd">
+<td>Ch 13</td>
+<td>reading</td>
+<td>2/28</td>
+</tr>
+<tr class="even">
+<td>VOTE IN DEMOCRATIC PRIMARY</td>
+<td>reading</td>
+<td>3/3</td>
+</tr>
+<tr class="odd">
+<td>Start Ch 14</td>
+<td>reading</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 14</td>
+<td>reading</td>
+<td>3/6</td>
+</tr>
+<tr class="odd">
+<td><strong>Term Paper Due</strong> 5PM</td>
+<td></td>
+<td>3/11</td>
+</tr>
+<tr class="even">
+<td><strong>Prepare for Final Exam</strong></td>
+<td></td>
+<td>3/19</td>
+</tr>
+</tbody>
+</table>
 <h1 id="preface">Preface</h1>
 <p>The US govt has structure</p>
 <p>the book has structure – 5-principle framework for analysis.</p>
@@ -95,7 +268,7 @@
 <li>The History Principle - How we got here matters</li>
 </ol>
 <h1 id="chapter-1---the-five-principles-of-politics">Chapter 1 - The Five Principles of Politics</h1>
-<!-- 
+<!--
 Intro
 
 Complicated organization & authority of govt is good for preventing monarchy **but** makes it confusing.
@@ -116,21 +289,97 @@ Questions for political scientists:
 - _Authoritarian_: No formal limits but may be limited by institutions
 - _Totalitarian_: No formal limits, Seeks to absorb / eliminate institutions that may limit it
  -->
-<p><strong><code>Politics</code></strong> - refers to <strong>conflicts</strong> - Conflicts over the leadership, structure, and policies - Goal is to have a say in how govt is organized / what policies will be - Ex: Individuals can get involved,</p>
+<p><strong><code>Politics</code></strong></p>
+<ul>
+<li>refers to <strong>conflicts</strong></li>
+<li>Conflicts over the leadership, structure, and policies</li>
+<li>Goal is to have a say in how govt is organized / what policies will be</li>
+<li>Ex: Individuals can get involved,</li>
+</ul>
 <h2 id="principles">Principles</h2>
 <h3 id="i---rationality">I - Rationality</h3>
 <p><strong>Governments respond to what people want</strong></p>
-<p>Main idea: - People have goals which influence their behavior. In particular their political goals affect their political behavior. - Goals can be social, personal - Political behavior: watching debate, go to city council meeting, cast vote. - Politicians: most acts are political, have ramifications - Their goals are political</p>
-<p>Goals: - Elected politicians: - (Electoral) <code>electoral connection</code>: <strong>Keep jobs, gain power</strong>, move to more prominent positions - ideally, challenge of winning elections motivated politicians to help constituents - (Personal) ideological / personal reasons - (Institutional) Committee Assignment - Agency heads -&gt; budget / funding - Legislative chairs -&gt; jurisdiction - voters -&gt; personal &amp; broader benefit - justices -&gt; prevailing interpretation of constitution</p>
-<p>Means / Outcomes - <code>Retail politics</code>: working directly with constituents - <code>Wholesale politics</code>: appealing to groups of constituents - (Personal): personal connection to policy motivates Congressman to vote for it - (Electoral):</p>
+<p>Main idea:</p>
+<ul>
+<li>People have goals which influence their behavior. In particular their political goals affect their political behavior.
+<ul>
+<li>Goals can be social, personal</li>
+<li>Political behavior: watching debate, go to city council meeting, cast vote.</li>
+</ul></li>
+<li>Politicians: most acts are political, have ramifications
+<ul>
+<li>Their goals are political</li>
+</ul></li>
+</ul>
+<p>Goals:</p>
+<ul>
+<li>Elected politicians:
+<ul>
+<li>(Electoral) <code>electoral connection</code>: <strong>Keep jobs, gain power</strong>, move to more prominent positions
+<ul>
+<li>ideally, challenge of winning elections motivated politicians to help constituents</li>
+</ul></li>
+<li>(Personal) ideological / personal reasons</li>
+<li>(Institutional) Committee Assignment</li>
+</ul></li>
+<li>Agency heads -&gt; budget / funding</li>
+<li>Legislative chairs -&gt; jurisdiction</li>
+<li>voters -&gt; personal &amp; broader benefit</li>
+<li>justices -&gt; prevailing interpretation of constitution</li>
+</ul>
+<p>Means / Outcomes</p>
+<ul>
+<li><code>Retail politics</code>: working directly with constituents</li>
+<li><code>Wholesale politics</code>: appealing to groups of constituents</li>
+<li>(Personal): personal connection to policy motivates Congressman to vote for it</li>
+<li>(Electoral):</li>
+</ul>
 <h3 id="ii---institution">II - Institution</h3>
 <p><strong>Institutions Structure Politics</strong></p>
-<p>Main Idea: - Institutions are routinized, structured relations which allow gov actors to address recurring problems or facilitate pursuing goals - They organize political activity</p>
-<p>Terminology relating to structure of some institutions: - <code>Jurisdiction</code>: The domain where an institution / member has authority - <strong>ex</strong> FDA has jurisdiction / authority over marketing drugs. - <code>Agenda Power</code>: Power to control which items are put to a vote - <code>Veto Power</code>: power to override a vote - <code>Decisiveness rules</code>: A specification of when a vote may be taken and the sequence in which votes occur - <strong>ex</strong> the Senate rule that says a vote can be forced without further debate with 60 votes. - <code>Delegation</code> - Transmission of authority to some other official or body - <strong>ex</strong> president can delegate to cabinet officials - <code>Principals &amp; Agents</code> - A principal can delegate to an agent to do some task - Challenge for leader: (1) make sure follower has aligned motives, (2) don’t expend too much cost policing delegated decisions. - <strong>ex</strong> Representative Democracy</p>
+<p>Main Idea:</p>
+<ul>
+<li>Institutions are routinized, structured relations which allow gov actors to address recurring problems or facilitate pursuing goals</li>
+<li>They organize political activity</li>
+</ul>
+<p>Terminology relating to structure of some institutions:</p>
+<ul>
+<li><code>Jurisdiction</code>: The domain where an institution / member has authority
+<ul>
+<li><strong>ex</strong> FDA has jurisdiction / authority over marketing drugs.</li>
+</ul></li>
+<li><code>Agenda Power</code>: Power to control which items are put to a vote</li>
+<li><code>Veto Power</code>: power to override a vote</li>
+<li><code>Decisiveness rules</code>: A specification of when a vote may be taken and the sequence in which votes occur
+<ul>
+<li><strong>ex</strong> the Senate rule that says a vote can be forced without further debate with 60 votes.</li>
+</ul></li>
+<li><code>Delegation</code>
+<ul>
+<li>Transmission of authority to some other official or body</li>
+<li><strong>ex</strong> president can delegate to cabinet officials</li>
+</ul></li>
+<li><code>Principals &amp; Agents</code>
+<ul>
+<li>A principal can delegate to an agent to do some task</li>
+<li>Challenge for leader: (1) make sure follower has aligned motives, (2) don’t expend too much cost policing delegated decisions.</li>
+<li><strong>ex</strong> Representative Democracy</li>
+</ul></li>
+</ul>
 <h3 id="iii---collective-action">III - Collective Action</h3>
 <p><strong>All Politics Is Collective Action</strong></p>
-<p>Main idea: - People work together to achieve mutual political goals</p>
-<p>Terms: - <code>Bargaining</code>: negotiation - can be formal or informal - Problem: When people act purely in self interests they can end up worse off than - <code>Collective Action</code> = political cooperation in a group</p>
+<p>Main idea:</p>
+<ul>
+<li>People work together to achieve mutual political goals</li>
+</ul>
+<p>Terms:</p>
+<ul>
+<li><code>Bargaining</code>: negotiation
+<ul>
+<li>can be formal or informal</li>
+<li>Problem: When people act purely in self interests they can end up worse off than</li>
+</ul></li>
+<li><code>Collective Action</code> = political cooperation in a group</li>
+</ul>
 <!-- todo -->
 <ul>
 <li>equilibrium
@@ -142,7 +391,11 @@ Questions for political scientists:
 </ul>
 <h3 id="iv---policy">IV - Policy</h3>
 <p><strong>Political Outcomes Are the Products of Individual Preferences and Institutional Procedures</strong></p>
-<p>Policy is the result of a combination of: - rationality – because votes to enact a policy can be motivated by ambitions - collective action – because groups can influence how people vote <!-- * ? --></p>
+<p>Policy is the result of a combination of:</p>
+<ul>
+<li>rationality – because votes to enact a policy can be motivated by ambitions</li>
+<li>collective action – because groups can influence how people vote <!-- * ? --></li>
+</ul>
 <h3 id="v---history">V - History</h3>
 <p><strong>History influences future</strong></p>
 <ul>
@@ -158,33 +411,214 @@ Questions for political scientists:
 <li>Resolution said every state must send delegates to Philadelphia where they will plan better things.</li>
 </ul></li>
 </ul>
-<p>Motivation for Redesigning the Articles of Confederation: * Wanted <strong>protection for commerce and property</strong> against radical state legislatures. * ship piracy for southern states * debtor revolt for larger states * Resist populist interests hostile to elites</p>
-<p><strong>First Constitutional Convention, 1787</strong> - Delegates from every state (except Rhode Island) - Virginia Proposal: originally proposed bicameral gov structure - <strong><code>Great Compromise</code></strong>: Agreement between larger &amp; smaller states to have representation in Fed that was <strong>bicameral</strong> – divided into two chambers - where larger states had proportional representation in the house and the smaller states got equal rep. in the senate. - The two chambers had different powers</p>
-<p><strong>Three Fifths Compromise</strong> - Northern states: didn’t want slaves to count for representation - southern states: wanted slaves to count for representation - -&gt; Three Fifths compromise for determining <em>legislation</em> (slaves still <strong>not</strong> allowed to vote). - Premonition of</p>
-<p><strong>todo</strong> - pg ~40(?) something about <strong>interests aligning with principles</strong> - delegates motivated to do something better than articles of confederation –&gt; they made BIG compromises. - <strong>Aside</strong> - <code>md       I think this point is **really** interesting -- Part of the reason that the structure of the constitution was so "brilliant" wasn't because the framers were these immaculate geniuses -- there were **concerned** representatives from **every state** who came together because they all understood that the status quo - the ACs - weren't good enough. Everybody disliked them and they all wanted something better.</code> - population swing -&gt; senate elections &amp; 6yr terms</p>
+<p>Motivation for Redesigning the Articles of Confederation:</p>
+<ul>
+<li>Wanted <strong>protection for commerce and property</strong> against radical state legislatures.
+<ul>
+<li>ship piracy for southern states</li>
+<li>debtor revolt for larger states</li>
+</ul></li>
+<li>Resist populist interests hostile to elites</li>
+</ul>
+<p><strong>First Constitutional Convention, 1787</strong></p>
+<ul>
+<li>Delegates from every state (except Rhode Island)</li>
+<li>Virginia Proposal: originally proposed bicameral gov structure</li>
+<li><strong><code>Great Compromise</code></strong>: Agreement between larger &amp; smaller states to have representation in Fed that was <strong>bicameral</strong> – divided into two chambers - where larger states had proportional representation in the house and the smaller states got equal rep. in the senate.
+<ul>
+<li>The two chambers had different powers</li>
+</ul></li>
+</ul>
+<p><strong>Three Fifths Compromise</strong></p>
+<ul>
+<li>Northern states: didn’t want slaves to count for representation</li>
+<li>southern states: wanted slaves to count for representation</li>
+<li>-&gt; Three Fifths compromise for determining <em>legislation</em> (slaves still <strong>not</strong> allowed to vote).</li>
+<li>Premonition of</li>
+</ul>
+<p><strong>todo</strong></p>
+<ul>
+<li>pg ~40(?) something about <strong>interests aligning with principles</strong>
+<ul>
+<li>delegates motivated to do something better than articles of confederation –&gt; they made BIG compromises.</li>
+<li><strong>Aside</strong>
+<ul>
+<li><div class="sourceCode" id="cb1"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>  I think this point is **really** interesting -- Part of the reason that the structure of the constitution was so &quot;brilliant&quot; wasn&#39;t because the framers were these immaculate geniuses -- there were **concerned** representatives from **every state** who came together because they all understood that the status quo - the ACs - weren&#39;t good enough. Everybody disliked them and they all wanted something better.</span></code></pre></div></li>
+</ul></li>
+</ul></li>
+<li>population swing -&gt; senate elections &amp; 6yr terms</li>
+</ul>
 <h3 id="legislative-branch---article-i">Legislative Branch - Article I</h3>
-<p>Structure: - House of Representatives - Members elected by direct elections - Representation proportional to state population - Terms: 2 years - Goals: - directly responsible to the people - Powers: - Originate legislation about finance &amp; commerce - change structure of federal courts - Senate - Members (originally) appointed by state leg. - Representation equal for each state - Terms: 6 years &amp; staggered - avoid complacence in quick changes of public opinion. - Goals: - guard against excessive democracy - Powers: - Approve treaties - Approve federal judges</p>
-<p>Powers of the Legislative Branch: - Express Powers - declare war, levy taxes, regulate commerce and currency, … - Necessary and Proper Clause [A1.8] - Power to enact laws necessary &amp; proper to implement powers given to congress OR any other branch / office of the Fed.</p>
+<p>Structure:</p>
+<ul>
+<li>House of Representatives
+<ul>
+<li>Members elected by direct elections</li>
+<li>Representation proportional to state population</li>
+<li>Terms: 2 years</li>
+<li>Goals:
+<ul>
+<li>directly responsible to the people</li>
+</ul></li>
+<li>Powers:
+<ul>
+<li>Originate legislation about finance &amp; commerce</li>
+<li>change structure of federal courts</li>
+</ul></li>
+</ul></li>
+<li>Senate
+<ul>
+<li>Members (originally) appointed by state leg.</li>
+<li>Representation equal for each state</li>
+<li>Terms: 6 years &amp; staggered
+<ul>
+<li>avoid complacence in quick changes of public opinion.</li>
+</ul></li>
+<li>Goals:
+<ul>
+<li>guard against excessive democracy</li>
+</ul></li>
+<li>Powers:
+<ul>
+<li>Approve treaties</li>
+<li>Approve federal judges</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Powers of the Legislative Branch:</p>
+<ul>
+<li>Express Powers
+<ul>
+<li>declare war, levy taxes, regulate commerce and currency, …</li>
+</ul></li>
+<li>Necessary and Proper Clause <a href="Implied%20Powers%20-" title="make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers">A1.8</a>
+<ul>
+<li>Power to enact laws necessary &amp; proper to implement powers given to congress OR any other branch / office of the Fed.</li>
+</ul></li>
+</ul>
 <h3 id="the-executive-branch---article-ii">The Executive Branch - Article II</h3>
 <ul>
 <li>Hamilton wanted “energy”</li>
 </ul>
-<p>Goals: - Make Fed the agency for timely and decisive action to deal with public issues and problems - Hamilton called this “energy” - Withstand excessively democratic pressures by doing indirect elections. Powers: - Accept ambassadors - negotiate treaties - grant pardons, except in cases of impeachment - appoint major departmental personnel (<strong>ex</strong> FBI Director) - convene congress in a special session - Veto congressional enactments - can be overridden by two-thirds majority</p>
+<p>Goals:</p>
+<ul>
+<li>Make Fed the agency for timely and decisive action to deal with public issues and problems
+<ul>
+<li>Hamilton called this “energy”</li>
+</ul></li>
+<li>Withstand excessively democratic pressures by doing indirect elections. Powers:</li>
+<li>Accept ambassadors</li>
+<li>negotiate treaties</li>
+<li>grant pardons, except in cases of impeachment</li>
+<li>appoint major departmental personnel (<strong>ex</strong> FBI Director)</li>
+<li>convene congress in a special session</li>
+<li>Veto congressional enactments
+<ul>
+<li>can be overridden by two-thirds majority</li>
+</ul></li>
+</ul>
 <h3 id="judicial-branch---article-iii">Judicial Branch - Article III</h3>
-<p>Goals: - Enhance power of Fed - check radical democratic impulses - guard against interference w/ liberty and property from the rest of the gov. Supreme Court: - Powers: - determine whether a power was usable by: (1) Fed only, (2) Fed &amp; states, or (3) states only. - determine whether a law is constitutional - resolve disputes between state &amp; federal courts - resolve cases between citizens of different states - Structure - Justices have lifetime appointments - Justices cannot have salaries reduced while serving</p>
+<p>Goals:</p>
+<ul>
+<li>Enhance power of Fed</li>
+<li>check radical democratic impulses</li>
+<li>guard against interference w/ liberty and property from the rest of the gov. Supreme Court:</li>
+<li>Powers:
+<ul>
+<li>determine whether a power was usable by: (1) Fed only, (2) Fed &amp; states, or (3) states only.</li>
+<li>determine whether a law is constitutional</li>
+<li>resolve disputes between state &amp; federal courts</li>
+<li>resolve cases between citizens of different states</li>
+</ul></li>
+<li>Structure
+<ul>
+<li>Justices have lifetime appointments</li>
+<li>Justices cannot have salaries reduced while serving</li>
+</ul></li>
+</ul>
 <h1 id="chapter-3---federalism-and-the-separation-of-powers">Chapter 3 - Federalism and the Separation of Powers</h1>
-<p>Some relevant principles for context: * Federalism - Principle of division of governance into federal and state levels. * Idea is that states retain some power as entities themselves. This allows them to retain some rights &amp; authority over themselves AND limits the potential power of the Fed. * Separation of Powers - Division of power of the federal government into 3 branches * The idea is that the branches limit each others power so no single part becomes too powerful * <code>Sovereignty</code>: Independent political authority.</p>
-<p>Federalism in the Constitution - Who Decides What - Federal government Powers - [A1.8]: Express Powers - {collect taxes, coin money, declare war, regulate commerce} - [A1.8]: Implied Powers - “make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers” - [A6]: All national laws &amp; treaties are “supreme Law of the Land” - <strong>ex</strong>: Support for corn farmers - [A1.3]</p>
+<p>Some relevant principles for context:</p>
+<ul>
+<li>Federalism - Principle of division of governance into federal and state levels.
+<ul>
+<li>Idea is that states retain some power as entities themselves. This allows them to retain some rights &amp; authority over themselves AND limits the potential power of the Fed.</li>
+</ul></li>
+<li>Separation of Powers - Division of power of the federal government into 3 branches
+<ul>
+<li>The idea is that the branches limit each others power so no single part becomes too powerful</li>
+</ul></li>
+<li><code>Sovereignty</code>: Independent political authority.</li>
+</ul>
+<p>Federalism in the Constitution - Who Decides What</p>
+<ul>
+<li>Federal government Powers
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul></li>
+<li><strong>ex</strong>: Support for corn farmers
+<ul>
+<li>[A1.3]</li>
+</ul></li>
+</ul>
 <h1 id="chapters-1-2-3">Chapters 1, 2, 3</h1>
-<p>Federalism - - Federal government - Articles of Confederation - Replaced by Constitution</p>
+<p>Federalism</p>
+<ul>
+<li><ul>
+<li>Federal government - Articles of Confederation</li>
+<li>Replaced by Constitution</li>
+</ul></li>
+</ul>
 <p>3 types: see lecture notes for details</p>
 <h1 id="chapter-4---civil-liberties">Chapter 4 - Civil Liberties</h1>
 <h2 id="where-do-civil-liberties-come-from">Where do Civil Liberties come from?</h2>
-<p><strong><code>Civil Liberties</code></strong>: (ch4) Limits on what <strong>people</strong> may do freely in society. - They are restrictions on gov, so the limit the [#collective] decisions people make via congress. - <a href="https://www.law.cornell.edu/constitution/billofrights">Bill of <del>Rights</del> (Liberties)</a> [1791] - <strong>many provisions</strong> - [M1] Speech, press, religion, assembly - [M2] Bear arms - [M3] Soldiers - [M4] Search &amp; Seizures - [M5] Due Process, double jeopardy, self-incrimination - Miranda rights ([sc] [1966] Miranda v. Arizona) - [M6] Trial by Jury - [M7] $20 - [M8] Cruel &amp; Unusual Punishment - [M9] Not exhaustive - [M10] Other rights reserved to the States</p>
-<p>HIstorical things: - Religion and the Establishment Clause - &gt; Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. - Jefferson “Wall of Separation” (of church &amp; state) - But some things have persisted, unchallenged by courts: money - Court struck down bible reading in public schools: “highly suggestive” - Court agreed that withholding money to a sports team b/c of religion was “viewpoint discrimination” - “under God” - added in in [1954] - upheld inconclusively in [sc] - 10 commandments issue: same justice made swing vote both ways [LGSA.115] - <strong>Thing</strong>: Religion cannot be part of any test required to hold office, BUT many <em>citizen voters</em> may choose not to vote for a particular candidate for <strong>any</strong> reason they want. - Time / Place / Manner regulation - [sc] [1940] Cantwell v. Connecticut - Court struck down a prison beard ban because it violated a man’s right to express his religion by growing a beard - Court held that when A&amp;F refused to hire a Muslim woman because her head scarf violated company dress code, they were engaging in religious discrimination. <!-- * I think I personally agree with the court here - inclusive vision --></p>
+<p><strong><code>Civil Liberties</code></strong>: (ch4) Limits on what <strong>people</strong> may do freely in society.</p>
+<ul>
+<li>They are restrictions on gov, so the limit the [#collective] decisions people make via congress.</li>
+<li><a href="https://www.law.cornell.edu/constitution/billofrights">Bill of <del>Rights</del> (Liberties)</a> [1791]
+<ul>
+<li><strong>many provisions</strong></li>
+<li>[M1] Speech, press, religion, assembly</li>
+<li>[M2] Bear arms</li>
+<li>[M3] Soldiers</li>
+<li>[M4] Search &amp; Seizures</li>
+<li>[M5] Due Process, double jeopardy, self-incrimination
+<ul>
+<li>Miranda rights ([sc][1966] Miranda v. Arizona)</li>
+</ul></li>
+<li>[M6] Trial by Jury</li>
+<li>[M7] $20</li>
+<li>[M8] Cruel &amp; Unusual Punishment</li>
+<li>[M9] Not exhaustive</li>
+<li>[M10] Other rights reserved to the States</li>
+</ul></li>
+</ul>
+<p>HIstorical things:</p>
+<ul>
+<li><p>Religion and the Establishment Clause</p>
+<ul>
+<li><blockquote>
+<p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+</blockquote></li>
+<li>Jefferson “Wall of Separation” (of church &amp; state)</li>
+<li>But some things have persisted, unchallenged by courts: money</li>
+<li>Court struck down bible reading in public schools: “highly suggestive”</li>
+<li>Court agreed that withholding money to a sports team b/c of religion was “viewpoint discrimination”</li>
+<li>“under God” - added in in [1954]
+<ul>
+<li>upheld inconclusively in [sc]</li>
+</ul></li>
+<li>10 commandments issue: same justice made swing vote both ways [LGSA.115]</li>
+<li><strong>Thing</strong>: Religion cannot be part of any test required to hold office, BUT many <em>citizen voters</em> may choose not to vote for a particular candidate for <strong>any</strong> reason they want.</li>
+<li>Time / Place / Manner regulation - [sc][1940] Cantwell v. Connecticut</li>
+<li>Court struck down a prison beard ban because it violated a man’s right to express his religion by growing a beard</li>
+<li>Court held that when A&amp;F refused to hire a Muslim woman because her head scarf violated company dress code, they were engaging in religious discrimination. <!-- * I think I personally agree with the court here - inclusive vision --></li>
+</ul></li>
+</ul>
 <h2 id="notable-cases-in-civil-liberties-history">Notable Cases in Civil Liberties History</h2>
 <ol type="1">
-<li>[sc] [1971] Lemon v. Kurtzman
+<li>[sc][1971] Lemon v. Kurtzman
 <ul>
 <li><strong>Lemon Test</strong> - The national or sate governments MAY make a policy dealing with religion IF:
 <ul>
@@ -218,33 +652,99 @@ Questions for political scientists:
 </ol>
 <h1 id="chapter-5---civil-rights">Chapter 5 - Civil Rights</h1>
 <h2 id="what-are-civil-rights">What are Civil Rights?</h2>
-<p><strong><code>Civil Rights</code></strong>: - Requirements on government and organizations regarding <strong>treatment of people</strong>, especially <strong>equal treatment</strong> - Rules that govern collective decision-making processes and outcomes - They <strong>do</strong> extend to private actors - Types - some govern <strong>who</strong> can be involved in [#collective] decisions &amp; political processes and <strong>how</strong> - <strong>ex</strong>: Who can vote, serve in office, have a trial, or serve on jury - some concern how people are <strong>treated</strong> in organizations and in society - <strong>ex</strong>: access to public facilities, schools, hospitals <!-- todo see TESTS --></p>
-<p><strong>Examples of Civil Rights</strong> [LGSA.149] - Political - Voting (18+ y/o citizens) - citizenship - Legal - due process (everybody) - habeas corpus - right to see a court if charged w crime (everybody living on US soil) - Social - right to not be enslaved - marriage rights - right to work - own property - education - medical care @ emergency rooms - standard of living - due compensation if Gov takes property</p>
-<p><strong>Principles</strong> 1. Civil rights should be <strong>Universal.</strong> - apply to everybody. 2. Civil rights should be <strong>Equal</strong> - all people with a right should have equal ability to practice it.</p>
-<p><strong>Compare/Contrast Civil Liberties &amp; Civil Rights</strong> - in common: - restrictions on gov power - Differences: - CL makes provisions about people, regarding what people are allowed to do - protect peoples’ individual freedoms against potentially over-reaching government - CR makes restrictions on organizations, regarding how they can treat different groups of people - protect peoples’ treatment, access, and participation in context of potentially discriminating organizations or institutions</p>
-<p><strong>Relevance</strong> - US provides civil rights many other nations don’t have - When injustices need fixing, new civil rights can be extended. - Its up to people / processes to determine if/how to extend civil rights.</p>
-<p>Requirements on government (and be extension <strong>private actors</strong>) to provide equal treatment of people - regulate <strong>who</strong> can participate and <strong>how</strong> (juries, voting, due process) - Rules that Gov must follow regarding treatment of people</p>
+<p><strong><code>Civil Rights</code></strong>:</p>
+<ul>
+<li>Requirements on government and organizations regarding <strong>treatment of people</strong>, especially <strong>equal treatment</strong></li>
+<li>Rules that govern collective decision-making processes and outcomes</li>
+<li>They <strong>do</strong> extend to private actors</li>
+<li>Types
+<ul>
+<li>some govern <strong>who</strong> can be involved in [#collective] decisions &amp; political processes and <strong>how</strong>
+<ul>
+<li><strong>ex</strong>: Who can vote, serve in office, have a trial, or serve on jury</li>
+</ul></li>
+<li>some concern how people are <strong>treated</strong> in organizations and in society - <strong>ex</strong>: access to public facilities, schools, hospitals <!-- todo see TESTS --></li>
+</ul></li>
+</ul>
+<p><strong>Examples of Civil Rights</strong> [LGSA.149]</p>
+<ul>
+<li>Political
+<ul>
+<li>Voting (18+ y/o citizens)</li>
+<li>citizenship</li>
+</ul></li>
+<li>Legal
+<ul>
+<li>due process (everybody)</li>
+<li>habeas corpus - right to see a court if charged w crime (everybody living on US soil)</li>
+</ul></li>
+<li>Social
+<ul>
+<li>right to not be enslaved</li>
+<li>marriage rights</li>
+<li>right to work</li>
+<li>own property</li>
+<li>education</li>
+<li>medical care @ emergency rooms</li>
+<li>standard of living</li>
+<li>due compensation if Gov takes property</li>
+</ul></li>
+</ul>
+<p><strong>Principles</strong></p>
+<ol type="1">
+<li>Civil rights should be <strong>Universal.</strong> - apply to everybody.</li>
+<li>Civil rights should be <strong>Equal</strong> - all people with a right should have equal ability to practice it.</li>
+</ol>
+<p><strong>Compare/Contrast Civil Liberties &amp; Civil Rights</strong></p>
+<ul>
+<li>in common:
+<ul>
+<li>restrictions on gov power</li>
+</ul></li>
+<li>Differences:
+<ul>
+<li>CL makes provisions about people, regarding what people are allowed to do
+<ul>
+<li>protect peoples’ individual freedoms against potentially over-reaching government</li>
+</ul></li>
+<li>CR makes restrictions on organizations, regarding how they can treat different groups of people
+<ul>
+<li>protect peoples’ treatment, access, and participation in context of potentially discriminating organizations or institutions</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>Relevance</strong></p>
+<ul>
+<li>US provides civil rights many other nations don’t have</li>
+<li>When injustices need fixing, new civil rights can be extended.</li>
+<li>Its up to people / processes to determine if/how to extend civil rights.</li>
+</ul>
+<p>Requirements on government (and be extension <strong>private actors</strong>) to provide equal treatment of people</p>
+<ul>
+<li>regulate <strong>who</strong> can participate and <strong>how</strong> (juries, voting, due process)</li>
+<li>Rules that Gov must follow regarding treatment of people</li>
+</ul>
 <h2 id="where-do-civil-rights-come-from">Where do civil rights come from?</h2>
 <ul>
 <li>Federal Constitution
 <ul>
 <li>[A1.2] representation in congress, who can become president</li>
 <li>[A1.9] prevents unlawful detention for all people</li>
-<li>[1865] [M13]
+<li>[1865][m13]
 <ul>
 <li>prohibited slavery</li>
 </ul></li>
-<li>[1868] [M14]
+<li>[1868][m14]
 <ul>
 <li><strong>Equal Protection</strong>, Citizenship, and life, liberty, property</li>
 <li>transformational</li>
 <li>still used today for expanding civil rights</li>
 </ul></li>
-<li>[1870] [M15]
+<li>[1870][m15]
 <ul>
 <li>voting rights for African-American men</li>
 </ul></li>
-<li>[1919] [M19]
+<li>[1919][m19]
 <ul>
 <li>voting rights for women</li>
 </ul></li>
@@ -264,11 +764,11 @@ Questions for political scientists:
 </ul></li>
 <li>Judicial Rulings / Supreme Court
 <ul>
-<li>[1954] [sc] [Brown v. Board of Education]
+<li>[1954][sc] [Brown v. Board of Education]
 <ul>
 <li>Banned “separate but equal” policies in Plessy v. Ferguson</li>
 </ul></li>
-<li>[2015] [sc] Obergefell v. Hodges
+<li>[2015][sc] Obergefell v. Hodges
 <ul>
 <li>gay marriage rights</li>
 </ul></li>
@@ -303,25 +803,25 @@ Questions for political scientists:
 </ul></li>
 <li>Post Civil-War (1861-65): (Amendments 13, 14, 15)
 <ul>
-<li>[1865] [M13]
+<li>[1865][m13]
 <ul>
 <li>prohibited slavery</li>
 </ul></li>
-<li>[1868] [M14] <strong>Equal Protection</strong>
+<li>[1868][m14] <strong>Equal Protection</strong>
 <ul>
 <li>transformational</li>
 <li>still used today for expanding civil rights</li>
 </ul></li>
-<li>[1869] [M15]
+<li>[1869][m15]
 <ul>
 <li>voting rights for blacks</li>
 <li>limited access - Jim Crow</li>
 </ul></li>
 </ul></li>
 <li>[1870s]-[1880s] Jim Crow laws</li>
-<li>[1896] [sc] Plessy v. Ferguson - upheld state-sponsored segregation</li>
-<li>[1919] [M19] Women voting rights</li>
-<li>[1954] [sc] Brown v. Board of Education - segregation of schools unconstitutional</li>
+<li>[1896][sc] Plessy v. Ferguson - upheld state-sponsored segregation</li>
+<li>[1919][m19] Women voting rights</li>
+<li>[1954][sc] Brown v. Board of Education - segregation of schools unconstitutional</li>
 <li>[1964] <strong>Civil Rights Act</strong> &amp; [1965] <strong>Voting Rights Act</strong>
 <ul>
 <li>final end of Jim Crow</li>
