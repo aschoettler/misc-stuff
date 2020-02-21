@@ -14,6 +14,20 @@
     ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="https://aschoettler.github.io/misc-stuff/markdown-css-master/github.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      fleqn: false
+     });
+  }}});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -39,7 +53,2452 @@
 <header id="title-block-header">
 <h1 class="title">Polysci Class Notes</h1>
 </header>
-
+<h1 id="american-government-and-politics">American Government and Politics</h1>
+<h2 id="longrightarrow-reading-notes-longleftarrow"><a href="./reading-notes.html"><span class="math inline">\longrightarrow</span> Reading Notes <span class="math inline">\longleftarrow</span></a></h2>
+<ul>
+<li><a href="#american-government-and-politics">American Government and Politics</a>
+<ul>
+<li><a href="#mathsemanticsmrowmomomrowannotation-encodingapplicationx-texlongrightarrowannotationsemanticsmath-reading-notes-mathsemanticsmrowmomomrowannotation-encodingapplicationx-texlongleftarrowannotationsemanticsmath"><span class="math inline">\longrightarrow</span> Reading Notes <span class="math inline">\longleftarrow</span></a></li>
+<li><a href="#course-stuff">Course Stuff</a></li>
+</ul></li>
+<li><a href="#lecture-1">Lecture 1</a>
+<ul>
+<li><a href="#context-for-the-class">Context for the class</a></li>
+<li><a href="#what-this-class-is-about">What this class is about</a></li>
+<li><a href="#syllabus">Syllabus</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#lecture-content">Lecture Content</a></li>
+</ul></li>
+<li><a href="#lecture-2---origins--principles-of-us-democracy">Lecture 2 - Origins &amp; Principles of US Democracy</a>
+<ul>
+<li><a href="#section-week-1">Section Week 1</a></li>
+</ul></li>
+<li><a href="#lecture-3---federalism--separation-of-powers">Lecture 3 - Federalism &amp; Separation of Powers</a>
+<ul>
+<li><a href="#federalism-in-the-constitution">Federalism in the Constitution</a></li>
+<li><a href="#section-2-federalism">Section 2: Federalism</a></li>
+<li><a href="#iv-separation-of-powers">IV: Separation of Powers</a>
+<ul>
+<li><a href="#trump-challenge-to-separation-of-powers">Trump challenge to separation of powers</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#lecture-4---separation-of-powers-and-process-of-impeachment">Lecture 4 - Separation of Powers and Process of Impeachment</a>
+<ul>
+<li><a href="#institution-of-presidency">Institution of Presidency</a></li>
+<li><a href="#presidential-power">Presidential Power</a></li>
+<li><a href="#process-of-impeachment">Process of Impeachment</a></li>
+</ul></li>
+<li><a href="#lecture-5">Lecture 5</a>
+<ul>
+<li><a href="#civil-liberty">Civil Liberty</a></li>
+<li><a href="#limits-on-liberties">Limits on Liberties</a></li>
+</ul></li>
+<li><a href="#lecture-6">Lecture 6</a>
+<ul>
+<li><a href="#definitions">Definitions</a></li>
+<li><a href="#constitutional-and-legal-foundations">Constitutional and Legal Foundations</a></li>
+<li><a href="#current-question---lgbtq-rights-in-workplace">Current Question - LGBTQ Rights in workplace</a></li>
+<li><a href="#section-3">Section 3</a>
+<ul>
+<li><a href="#civil-rights-and-civil-liberties">Civil Rights and Civil Liberties</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#lecture-8-1---bureaucracy">Lecture 8-1 - Bureaucracy</a>
+<ul>
+<li><a href="#7-ingredients-for-bureaucracies">7 Ingredients for Bureaucracies</a></li>
+</ul></li>
+<li><a href="#section-4---mt-1-review">Section 4 - MT 1 Review</a></li>
+<li><a href="#lecture-9-1-congress">Lecture 9-1: Congress</a>
+<ul>
+<li><a href="#getting-oriented">Getting oriented</a></li>
+<li><a href="#three-major-malfunctions-of-congress">Three major malfunctions of congress</a></li>
+</ul></li>
+<li><a href="#lecture-9---the-federal-courts">Lecture 9 - The Federal Courts</a>
+<ul>
+<li><a href="#federal-court-structure">Federal Court Structure</a>
+<ul>
+<li><a href="#circuit-courts">Circuit Courts</a></li>
+<li><a href="#supreme-court">Supreme Court</a></li>
+</ul></li>
+<li><a href="#judicial-review">Judicial Review</a></li>
+<li><a href="#interpreting-the-constitution">Interpreting the Constitution</a></li>
+<li><a href="#the-roberts-court">The Roberts Court</a></li>
+</ul></li>
+<li><a href="#section-5---review-of-first-half-of-the-course">Section 5 - Review of First Half of the Course</a></li>
+<li><a href="#lecture-10---public-opinion">Lecture 10 - Public Opinion</a>
+<ul>
+<li><a href="#public-opinion">Public Opinion</a></li>
+<li><a href="#public-opionion-and-institutions">Public Opionion and Institutions</a></li>
+<li><a href="#public-opinon-and-policy">Public Opinon and Policy</a></li>
+<li><a href="#public-polarization">Public Polarization</a></li>
+</ul></li>
+<li><a href="#lecture-11-presidential-election-process">Lecture 11: Presidential Election Process</a>
+<ul>
+<li><a href="#the-eccentricities-of-us-elections">The Eccentricities of US Elections</a></li>
+<li><a href="#origins-of-our-election-system">Origins of our Election System</a></li>
+<li><a href="#the-long-mytho-of-more-democracy">The Long Mytho of “More Democracy”</a>
+<ul>
+<li><a href="#6-steps-of-more-elections">6 Steps of More Elections</a></li>
+<li><a href="#primaries">Primaries</a></li>
+</ul></li>
+<li><a href="#partisan-identity-and-voting">Partisan Identity and Voting</a></li>
+</ul></li>
+<li><a href="#section-6---courts">Section 6 - Courts</a></li>
+<li><a href="#lecture-12">Lecture 12</a>
+<ul>
+<li><a href="#public-voting-for-the-president">Public Voting for the President</a>
+<ul>
+<li><a href="#electors">Electors</a></li>
+</ul></li>
+<li><a href="#electoral-college-math">Electoral College Math</a></li>
+</ul></li>
+<li><a href="#links">Links</a></li>
+</ul>
+<p><strong>TODO</strong></p>
+<ul>
+<li><p><strong>Final Exam</strong> <code>Thursday, March 19, 2020 12:00 PM - 3:00 PM</code></p></li>
+<li><p>Book</p>
+<pre><code>15th core: 9780393675009
+15th full: 97803936555370
+14th full: 9780393283754
+14th core: 9780393283761</code></pre></li>
+</ul>
+<p><strong>Assignments</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Assignment</th>
+<th>Status</th>
+<th>Due</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Read Ch 1 and start Ch 2</td>
+<td>reading</td>
+<td>1/10</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 2 and Ch 3</td>
+<td>reading</td>
+<td>1/15</td>
+</tr>
+<tr class="odd">
+<td>Ch 4</td>
+<td>reading</td>
+<td>1/17</td>
+</tr>
+<tr class="even">
+<td>Ch 5</td>
+<td>reading</td>
+<td>1/22</td>
+</tr>
+<tr class="odd">
+<td>Ch 6</td>
+<td>reading</td>
+<td>1/24</td>
+</tr>
+<tr class="even">
+<td><strong>Prepare for Midterm 1</strong></td>
+<td></td>
+<td>1/29</td>
+</tr>
+<tr class="odd">
+<td>Ch 7</td>
+<td>reading</td>
+<td>1/31</td>
+</tr>
+<tr class="even">
+<td>Ch 8</td>
+<td>reading</td>
+<td>2/5</td>
+</tr>
+<tr class="odd">
+<td>Ch 9</td>
+<td>reading</td>
+<td>2/7</td>
+</tr>
+<tr class="even">
+<td>Ch 10</td>
+<td>reading</td>
+<td>2/12</td>
+</tr>
+<tr class="odd">
+<td>Start Ch 11</td>
+<td>reading</td>
+<td>2/14</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 11</td>
+<td>reading</td>
+<td>2/19</td>
+</tr>
+<tr class="odd">
+<td><strong>Prepare for Midterm 2</strong></td>
+<td></td>
+<td>2/21</td>
+</tr>
+<tr class="even">
+<td>Ch 12</td>
+<td>reading</td>
+<td>2/26</td>
+</tr>
+<tr class="odd">
+<td>Ch 13</td>
+<td>reading</td>
+<td>2/28</td>
+</tr>
+<tr class="even">
+<td>VOTE IN DEMOCRATIC PRIMARY</td>
+<td>reading</td>
+<td>3/3</td>
+</tr>
+<tr class="odd">
+<td>Start Ch 14</td>
+<td>reading</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td>Finish Ch 14</td>
+<td>reading</td>
+<td>3/6</td>
+</tr>
+<tr class="odd">
+<td><strong>Term Paper Due</strong> 5PM</td>
+<td></td>
+<td>3/11</td>
+</tr>
+<tr class="even">
+<td><strong>Prepare for Final Exam</strong></td>
+<td></td>
+<td>3/19</td>
+</tr>
+</tbody>
+</table>
+<h2 id="course-stuff">Course Stuff</h2>
+<p>TAs</p>
+<ul>
+<li>Daniel Gomez</li>
+<li>Social media stuff</li>
+</ul>
+<h1 id="lecture-1">Lecture 1</h1>
+<h3 id="context-for-the-class">Context for the class</h3>
+<ul>
+<li>Now is a good time to take this class</li>
+<li>Democracy is in trouble
+<ul>
+<li>Short-term costs for Long-term benefits = hard</li>
+<li>Polarization &amp; Animus – not since 1860s</li>
+<li><strong>Congress</strong>
+<ul>
+<li>Doesn’t produce much legislation</li>
+</ul></li>
+<li>Elections
+<ul>
+<li>Gerrymandering</li>
+</ul></li>
+</ul></li>
+<li>Economics, health care</li>
+<li>Climate Change</li>
+</ul>
+<h3 id="what-this-class-is-about">What this class is about</h3>
+<ul>
+<li>lecture is to focus on principles, “rules of the game” for democracy</li>
+<li>views can be brought up in section</li>
+<li>Trigger question = “That looks stupid”
+<ul>
+<li>the principles are so complex - more than all sports combined - that strategy can look like stupidity</li>
+<li>shoot missed something about malfeasance and stupidity probably relating to that occam’s razor idea</li>
+</ul></li>
+<li><strong>What to know</strong>
+<ul>
+<li>Politics shape reality
+<ul>
+<li>eg vehicle regulations for your car, FDA for food you eat, policy abt. housing, <em>social &amp; political &amp; physical reality</em> etc.</li>
+</ul></li>
+</ul></li>
+<li><strong>Goals</strong>
+<ul>
+<li>Understand crises facing you</li>
+</ul></li>
+</ul>
+<h3 id="syllabus">Syllabus</h3>
+<ul>
+<li>This is an <strong>introductory class</strong></li>
+<li>OH: Ellison Hall</li>
+<li>History: new deal, civil war, civil rights movement…</li>
+<li>Reading 2 chapters per week
+<ul>
+<li>Find <em>most important</em> concepts &amp; chapters</li>
+</ul></li>
+<li>Participate in Section</li>
+<li>MT1, MT2 - in-class, closed-book, need blue book
+<ul>
+<li>same for final</li>
+</ul></li>
+<li>Paper due near end - answer question about textbook
+<ul>
+<li>use reading material</li>
+</ul></li>
+</ul>
+<h3 id="news">News</h3>
+<ul>
+<li>NYT, WaPo, Guardian</li>
+<li>WSJ</li>
+<li>AP, Reuters</li>
+<li>Google News</li>
+<li>Cable News – shouldn’t be only news source</li>
+<li></li>
+</ul>
+<h3 id="lecture-content">Lecture Content</h3>
+<p><strong>Definitions</strong></p>
+<ul>
+<li>Government
+<ul>
+<li>Autocracies, Parliamentary</li>
+<li>consists of branches, associated with whole nation etc</li>
+<li>broad term</li>
+</ul></li>
+<li>State - one of the 50 US states</li>
+<li>state - national government</li>
+<li>Policy
+<ul>
+<li>what government <em>does</em>. 6 flavors</li>
+<li>Law (obamacare)</li>
+<li>Regulation issued by an agency (EPA, ..)</li>
+<li>Decision by a court</li>
+<li>Executive Order of a president</li>
+<li>A Credible Statement of Intent (eg by president)</li>
+<li>A Tradition - eg. US relationship with UK</li>
+</ul></li>
+<li>governance
+<ul>
+<li>lots of species can have governance</li>
+</ul></li>
+<li>politics
+<ul>
+<li>what politicians do (idk definition)</li>
+</ul></li>
+</ul>
+<p>LGSA 5 Principles of Politics [Term Paper]</p>
+<ol type="1">
+<li>All political behavior has a <em>purpose</em> (rationality principle)
+<ul>
+<li>If you can understand enough about a person’s motives, then their behavior makes sense</li>
+<li>not sure if I agree with this..</li>
+</ul></li>
+<li></li>
+</ol>
+<h1 id="lecture-2---origins-principles-of-us-democracy">Lecture 2 - Origins &amp; Principles of US Democracy</h1>
+<p><strong>Purpose of Political Behavior</strong> ~ <a href="reading-notes.md#Rationality">rationality</a></p>
+<p>Constitution</p>
+<ul>
+<li>supposed to be a living document</li>
+<li>design was political, <em>compromises</em></li>
+</ul>
+<p><strong>Values &amp; political preferences</strong></p>
+<ul>
+<li><strong><code>values</code></strong>: durable, core sense of what is good, valuable, worthwhile in life, and what is bad, to be avoided, harmful. Related to <em>Personality</em> and conduct. People who associate voluntarily tend to have similar values. Persist over time, and influence political preferences.
+<ul>
+<li>Not a function of intelligence or availability of information.</li>
+<li>Facts are most persuasive when audience has weakly held values / beliefs</li>
+<li>To <em>win</em> an argument, you have to identify the values driving your audience’s opinions, then bring facts to bear which say something / are relevant to those opinions.</li>
+</ul></li>
+<li>Structure of values is called <strong>ideology</strong>.
+<ul>
+<li>An organized set of values and political preferences.</li>
+</ul></li>
+</ul>
+<p><strong>Freedom, Order, and Equality</strong></p>
+<pre><code>Equality  liberal           communitarian
+  |
+  |
+  |       libertarian       conservative
+Freedom -------------------- Order</code></pre>
+<p>Freedom vs Order and Civil Liberties</p>
+<ul>
+<li>Prof says typically stronger social order (less liberty) correlates with less crime</li>
+<li>Examples: restrictions on porn, abortion, legalization cannabis, criminalization flag burning, teaching religion in school, more police power.</li>
+<li>Liberals, historically:
+<ul>
+<li>Opposed to gov’t power to influence restrictions on porn, drug use, or implement teaching religion.</li>
+</ul></li>
+</ul>
+<p>Freedom vs Equality - Civil Rights &amp; Civil Liberties</p>
+<ul>
+<li>Civil rights, social welfare, health care</li>
+<li>Do we use govt power to promote equality, or allow more personal freedom?</li>
+<li>“Life, Liberty and Pursuit of Happiness”</li>
+<li>libertarian = (0, 0) on (freedom-&gt; order, freedom-&gt; equality)
+<ul>
+<li>might want govt-sponsored health care + decriminalization of prostitution <!-- todo what is this - how to characterize ideology? --></li>
+</ul></li>
+<li>conservative = (1, 0)</li>
+<li>liberal = (0, 1)</li>
+<li>communitarian = (1,1)
+<ul>
+<li>tend to prefer strong use of gov authority to promote social order as well as equality</li>
+<li>tight-knit community.</li>
+<li>people know one another, buy into social arrangements, promote equality within community.</li>
+</ul></li>
+</ul>
+<p>Socialism</p>
+<ul>
+<li>State &amp; economy</li>
+<li>Strong control of economy by the state –&gt; more aligned w/ liberal</li>
+</ul>
+<p>Communism</p>
+<ul>
+<li>State &amp; Economy + Structure of politics itself</li>
+</ul>
+<p>Fascism - doesn’t fit into this picture.</p>
+<p>LGBTQ Rights</p>
+<ul>
+<li>Case 1: –missed–</li>
+<li>More persuasive on freedom grounds than liberty grounds [??]</li>
+<li>Case 2: Person fired for coming out</li>
+</ul>
+<p>Liberalism</p>
+<ol type="1">
+<li>A branch of enlightened political thought - John Locke.
+<ul>
+<li>People have rights, Gov’t exists to protect them</li>
+</ul></li>
+<li>Modern political ideology (progressive) <!-- todo clarify difference, see what AOC said --></li>
+</ol>
+<p>Progressivism</p>
+<ol type="1">
+<li>Reformist historical era - Ted Rosevelt</li>
+</ol>
+<p><strong>Two Approaches to the Operation of Democracy</strong> Locke - limited government</p>
+<ul>
+<li>Goal = prevent future tyrannical rule</li>
+<li>problem: people <em>can’t</em> become well-informed on all topics involved in a democracy.</li>
+</ul>
+<ol type="1">
+<li>Majoritarianism: majority gets what it wants
+<ul>
+<li>Example problem: Mojave desert. Should town put in sidewalks?
+<ul>
+<li>Townspeople (40%): YES - go to town halls, understand costs.</li>
+<li>Rural people (60%): MEH - don’t care, know that it would cost money, so they vote NO.</li>
+</ul></li>
+<li>Example: 2016 Presidential Election &amp; Electoral College
+<ul>
+<li>Electoral College in part created to prevent popular vote from electing demagogue.</li>
+</ul></li>
+</ul></li>
+<li>Pluralism
+<ul>
+<li>says that informed people who have strong stake so system should be tuned to pay attention to them over lesser informed majority.</li>
+<li>issues of inequality</li>
+</ul></li>
+</ol>
+<h2 id="section-week-1">Section Week 1</h2>
+<p><strong><a href="reading-notes.md#Rationality">Rationality</a></strong></p>
+<p>Political Spectrum</p>
+<ul>
+<li>Status Quo -</li>
+</ul>
+<h1 id="lecture-3---federalism-separation-of-powers">Lecture 3 - Federalism &amp; Separation of Powers</h1>
+<p><strong>Oh boy</strong></p>
+<ul>
+<li>Nature of Presidential Power - Friday this week</li>
+<li>FOr friday, read chapter on the presidency</li>
+</ul>
+<p>What is Democracy?</p>
+<ul>
+<li>constitutional government</li>
+<li>separation of powers</li>
+<li>federalism</li>
+</ul>
+<p><strong>Examples of Thigns - prof does a lot of these</strong></p>
+<ul>
+<li>Separation of Powers
+<ul>
+<li>Example: T Admin suing CA for weed non-enf. policy</li>
+</ul></li>
+<li>Policy
+<ul>
+<li>Local Laws - * Policy
+<ul>
+<li>IV - Noise ordinances &amp; lime scooters</li>
+</ul></li>
+<li>vs State Laws
+<ul>
+<li>__ evolved to be ?? some cooperative agreement among states</li>
+<li>Drug dealer - breaks states law (murder) + controlled substance (federal)</li>
+</ul></li>
+<li>Foreign Policy</li>
+<li>Immigration Policy</li>
+<li>Some policies from Fed Gov.</li>
+<li>Taxes to <em>all</em> levels of gov</li>
+<li>When conflict happens, there’s conflict</li>
+<li>Civil War: about Civil Rights
+<ul>
+<li>Abolition</li>
+</ul></li>
+<li>Thats Federalism.</li>
+</ul></li>
+</ul>
+<p><strong>Federalism</strong></p>
+<ul>
+<li><strong>Institutions</strong> structure politics
+<ul>
+<li>Law Enforcement</li>
+</ul></li>
+<li>Federal government - Articles of Confederation
+<ul>
+<li>Replaced by Constitution</li>
+</ul></li>
+<li>…</li>
+</ul>
+<h3 id="federalism-in-the-constitution">Federalism in the Constitution</h3>
+<ol type="1">
+<li>Lays out supremacy of Constitution itself and laws of national government</li>
+</ol>
+<ul>
+<li>National law supersedes state law (article 6)</li>
+</ul>
+<ol start="2" type="1">
+<li>Article 1 Secion 8</li>
+</ol>
+<ul>
+<li>power of federal gov (“congress”) to make laws to do XYZ and make laws to do help do those things.</li>
+<li>Specific Powers
+<ul>
+<li>Tax, regulate commerce, coin money, establish post ….. <!-- todo fill in  --></li>
+</ul></li>
+</ul>
+<ol start="3" type="1">
+<li>States Powers</li>
+</ol>
+<ul>
+<li>Not enumerated</li>
+<li>whatever Congress does not specify in law</li>
+<li>powers not delegated to US by constitn nor prohibited to it by the states <!-- todo some coment about civil rights --></li>
+</ul>
+<p>Federalism</p>
+<ul>
+<li>Dual Federalism
+<ul>
+<li>worked up to new deal</li>
+<li>power was taken very literally and narrowly</li>
+<li>states had a lot of power</li>
+<li>Fed gov exerted little power over state law</li>
+<li>Following end of civil war, Jim Crow allowed as state law
+<ul>
+<li>slavery end as national thing but left other stuff up to states.</li>
+</ul></li>
+<li>Child Labor
+<ul>
+<li>1916 first law passed - banned emplying children under 14. Limit 8hr work day, no night shifts.</li>
+<li>Done by banning shipment of goods where children worked</li>
+<li>[Hammer v Dagenhart, 1918] SC ruled fed gov doesn’t have power to regulate child labor.</li>
+</ul></li>
+</ul></li>
+<li>Cooperative Federalism and the <strong>New Deal</strong>
+<ul>
+<li>Context:
+<ul>
+<li>1930s: Industrial era, agriculture / manufacturing</li>
+<li>WWI US had some experience in global warfare</li>
+<li>Great Depression</li>
+</ul></li>
+<li>New Deal: says Fed should have more power, eg to help depression
+<ul>
+<li>environmental, social welfare, education policy</li>
+<li>Collective Agreement: <em>reinterpret</em> elastic clause under FDR</li>
+<li>Commerce Clause is super important, FG powers largely rest on this + elastic clause</li>
+</ul></li>
+<li>change to <em>Regulated</em> Federalism
+<ul>
+<li>Fed does <strong>more</strong> than before</li>
+<li><strong>Great Depression</strong> spurred need</li>
+<li>Extension of <em>Cooperative</em>,</li>
+<li>Fg putting pressure on states to do what they wanted.</li>
+<li>Traffic laws, speed limits</li>
+</ul></li>
+</ul></li>
+<li>Current Contests
+<ul>
+<li>states can now (1995) regulate speed limits on highways</li>
+<li>Regan: reduce FG for environmental, education, ___ policy.</li>
+<li>SC - guns in schools - Lopez 1995
+<ul>
+<li>FG can extend commerce to education, so FG can participate in education policy</li>
+<li>But too big of a stretch to limit guns in schools.</li>
+</ul></li>
+<li>SC - bg checks of gun buyers - Printz 1997
+<ul>
+<li>hunting laws controlled by states</li>
+<li>FG wanted to require bg checks, SC said too far a stretch</li>
+</ul></li>
+<li>State Climate Policy
+<ul>
+<li>FG agreed to let CA regulate vehicle emissions more strongly under state climate policy</li>
+<li>Trump admin proposes (1) allowing car manufacturers to be less efficient and (2) <strong>_</strong>
+<ul>
+<li>Opened antitrust investigation into car manufacturers’ agreement to increase standards</li>
+<li>Removed CA auth to regulate themselves</li>
+</ul></li>
+</ul></li>
+<li>State Sanctuary Laws
+<ul>
+<li>Trump admin contesting</li>
+<li>! notice contrasting types of state power</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="section-2-federalism">Section 2: Federalism</h3>
+<p>Questions:</p>
+<ul>
+<li>Federalism vs Anti-Federalism (18th century)
+<ul>
+<li><strong>Federalism</strong>:
+<ul>
+<li>Motivation: Didn’t want to have freedoms restricted</li>
+<li>Principles:
+<ul>
+<li><em>Strong</em> central government.</li>
+<li>Power restricted to a few ’educated people`</li>
+</ul></li>
+<li>Primary point of controversy</li>
+</ul></li>
+<li><strong>Anti-Federalism</strong>:
+<ul>
+<li>Motivation: Didn’t want to have monarchy</li>
+<li>Principles:
+<ul>
+<li>Diffuse power structure.</li>
+<li>More power in the hands of states</li>
+<li>More State governments</li>
+</ul></li>
+<li>feared they were getting into another monarchy</li>
+</ul></li>
+</ul></li>
+<li>Dual Federalism vs Cooperative Federalism. Differences, How/why they changed.
+<ul>
+<li>Dual Federalism: Power divided between Federal &amp; State governments</li>
+<li>Cooperative Federalism:
+<ul>
+<li>Where we are now</li>
+<li>“intrusions”</li>
+</ul></li>
+<li>Regulated Federalism</li>
+</ul></li>
+<li>Enumerated Powers
+<ul>
+<li>Powers that the constitution provides to congress</li>
+<li>Powers: <code>Commerce, War, ...</code></li>
+<li>Implied Powers:
+<ul>
+<li>authority of Congress to pass laws to enable them to fulfill their enumerated duties</li>
+</ul></li>
+<li><em>-&gt; Federalism</em> States get <em>everything</em> else.</li>
+</ul></li>
+<li>Separation of Powers
+<ul>
+<li>Checks and Balances</li>
+<li>Separate but Equal Branches</li>
+<li>Veto Power, Trial for impeachment, 2 Term limit</li>
+<li>Prevent Monarchy</li>
+</ul></li>
+<li>What is the Tyranny of the Majority
+<ul>
+<li>Fear: Lots of people who are gullible or can be persuaded to vote for someone they shouldn’t</li>
+<li>Current Question: What groups in the US would benefit from having an uninformed electorate?</li>
+</ul></li>
+<li></li>
+</ul>
+<p>Constitution:</p>
+<ul>
+<li>Article I: <strong>Legislative</strong></li>
+<li>Article II: <strong>Executive</strong></li>
+<li>Article III: <strong>Judicial</strong></li>
+<li>2 parts for each: Federal vs State level</li>
+</ul>
+<p>States differring from fed policy in the beginning</p>
+<ul>
+<li><p>Hammer v Daggenhart (child labor)</p></li>
+<li><p>Rationality principle - valued slavery more than north b/c of entirely economy</p>
+<ul>
+<li>North had machines [industrial]</li>
+</ul></li>
+<li><p>States Rights / Jim Crow: Dual Federalism</p></li>
+<li><p>NOW : Cooperative Federalism (Towards federalism direction)</p>
+<ul>
+<li>HOW we got here:</li>
+<li>FDR
+<ul>
+<li>made term limits [??]</li>
+<li>New Deal <strong>Expanded</strong> Fed power during great depression</li>
+<li><strong>Global Stage</strong> - WAR</li>
+<li><strong>Media</strong> - TV?</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Electoral College</strong>. What is it? Why do we have it? What ideology?</p>
+<ul>
+<li>Alignment: Federalism</li>
+<li>Purpose: Prevent population from electing person who would be bad for the country or who doesnt represent theur interests</li>
+<li>Issue: Counting slaves. 3/5 compromise for representation</li>
+<li><em>safeguard</em> against <em>uninformed</em> populous.</li>
+<li>Strategy: Delegate their voice [??] to people who wouldn’t be swayed</li>
+</ul></li>
+<li><p><strong>Imperial Presidency</strong>. What does it mean?</p>
+<ul>
+<li>Term to describe increasing power of presidency</li>
+<li>An Imperial President is one that pushes the status quo to a position of increased presidential power</li>
+<li><strong>FDR</strong></li>
+</ul></li>
+<li><p><strong>Media</strong> (FDR, Kennedy, Trump). How did media play into their hands? What did they do with it?</p>
+<ul>
+<li>Uses public as pre-established platforms</li>
+<li>Politicians have used media to advanced their own agendas</li>
+<li>How has media turned tables to manipulate politicians for their agendas</li>
+<li></li>
+</ul></li>
+</ul>
+<h3 id="iv-separation-of-powers">IV: Separation of Powers</h3>
+<p>In Principle:</p>
+<ul>
+<li>limit power of government via independant prances that are dependant on one another for power.</li>
+</ul>
+<p>In Practice:</p>
+<ul>
+<li>staggered terms, ligislating vs executing, veto, veto override, advice &amp; consent, impeacement &amp; trial, judicial review (later), etc</li>
+</ul>
+<p>Public policy came from congress up until new deal.</p>
+<ul>
+<li>Imperial Presidency</li>
+<li>Imperialism of president ~ power to aggregate power</li>
+</ul>
+<p>Struggle over who has power to make public policy. Presidents have usually gotten their way - expanded power of presidency, reducing power of congress.</p>
+<ul>
+<li>Trump thinks congress is ____ (less powerful) branch</li>
+<li>has made more strong assertions to accumulate power in white house since FDR or Lincoln</li>
+<li></li>
+</ul>
+<h4 id="trump-challenge-to-separation-of-powers">Trump challenge to separation of powers</h4>
+<ol type="1">
+<li>Violated intent of Congress on border wall funding
+<ul>
+<li>Constitution, article 1: congress has money power</li>
+<li>Trump admin used emergency policy to try to spend money anyway.</li>
+<li>When congress lets president get away with violating an act of congress, thats how they accumulate power.
+<ul>
+<li>wait so if trump is <em>within</em> his rights to use emergency power, why is that violating an act of congress?</li>
+</ul></li>
+</ul></li>
+<li>Resisted subpoenas for tax records from NY state prosecutors and Congress
+<ul>
+<li>Supreme court will rule on whether president can be prosecuted while in office</li>
+<li>IS THIS THE SAME THING as the recent court where ppl are arguing that hes “immune” from investigation?</li>
+<li>Trump has <em>also</em> resisted subpoenas</li>
+</ul></li>
+<li>Described impeachment as illegitimate and violation of election outcome</li>
+<li>Article II allows me to do whatever I want
+<ul>
+<li>Court of Public Opinion</li>
+<li>Attempt to</li>
+</ul></li>
+</ol>
+<h1 id="lecture-4---separation-of-powers-and-process-of-impeachment">Lecture 4 - Separation of Powers and Process of Impeachment</h1>
+<h2 id="institution-of-presidency">Institution of Presidency</h2>
+<ul>
+<li>President</li>
+<li>Cabinet
+<ul>
+<li>15 people heading different departments</li>
+</ul></li>
+<li>Independent Agencies &amp; Government Corporations
+<ul>
+<li>quasi-independent</li>
+<li>CIA, EPA</li>
+</ul></li>
+<li>Executive Offices
+<ul>
+<li>Agencies that help president do work</li>
+<li>Economic advisors, VP</li>
+</ul></li>
+<li>White House Staff</li>
+</ul>
+<h2 id="presidential-power">Presidential Power</h2>
+<p><strong>Power of the Government &amp; Office of Presidency</strong></p>
+<ul>
+<li>Power of congress has expanded over time from changing understanding of the <strong>commerce &amp; elastic clauses</strong></li>
+<li>Framers thought a lot about (enumerated) powers of congress</li>
+<li>Dual Federalism –&gt; Cooperative federalism &amp; Other forms (regulated)
+<ul>
+<li>Congress getting <strong>more powerful</strong> over time</li>
+<li>More pressure + SCOTUS +
+<ul>
+<li>industrialization, urbanization, emergence of US on global stage, finally Great Depression</li>
+</ul></li>
+</ul></li>
+<li>Sources of growth in <strong>presidential</strong> power:
+<ul>
+<li>size of state &amp; scope of policy
+<ul>
+<li>xxxxxxx</li>
+</ul></li>
+<li>assertions of power - individuals
+<ul>
+<li>xxxxxxx</li>
+</ul></li>
+<li>changing environment for media &amp; political communication
+<ul>
+<li>“Mass Media era”: TV, cable, social media -&gt; “going public”</li>
+<li>19th century presidents limited.</li>
+<li>Trump uses television and social media to be persuasive</li>
+</ul></li>
+</ul></li>
+<li>How did we get here?
+<ul>
+<li>LGSA on President powers - dont worry about categories</li>
+<li>Article II
+<ul>
+<li>framers wanted congress-centric government, limited presidency</li>
+<li>wanted to <strong>avoid a monarchy</strong> - Madison, Jefferson
+<ul>
+<li>Thought of president as “operating officer” rather than “executive officer”</li>
+</ul></li>
+<li>Powers for President originally quite limited</li>
+</ul></li>
+<li>Checks:
+<ul>
+<li>everything is checked by congress except pardon power</li>
+<li>Constitution provides for electoral college, delegated by the states</li>
+<li>Ideally prevents <em>Tyranny of the Majority</em>. Instead we got “Tyranny of the Minority”</li>
+</ul></li>
+</ul></li>
+<li>Areas of Expansion:
+<ul>
+<li>Commander in Chief
+<ul>
+<li>originally: congress declares war &amp; president leads it</li>
+<li>now: Presidents asserting ability to start war -&gt; War Powers Act</li>
+</ul></li>
+<li>Recommending measures for consideration by Congress
+<ul>
+<li>originally: Quaint. Ask congress to pass a bill</li>
+<li>now: parties stronger. Pres mounts public campaigns to pressure congress
+<ul>
+<li>Obama: Stimulus package unresistable.</li>
+</ul></li>
+</ul></li>
+<li>Delegated powers to take care that laws be faithfully executed
+<ul>
+<li>shape how laws are interpreted, (eg. enforcement rules)</li>
+<li>recommend agencies more or less funding</li>
+<li>heads of agencies</li>
+</ul></li>
+<li>Treaties
+<ul>
+<li>Iran Nuclear treaty - Trump said we’ll build intermediate range nuclear treaties.</li>
+<li>Paris Climate Accords - withdraw</li>
+</ul></li>
+<li>Veto Power</li>
+</ul></li>
+<li>Trump
+<ul>
+<li>intimidates enimies</li>
+<li>lies to poeple</li>
+<li>Can he get away with instructing subpoena refusal?</li>
+<li>Does Trump warrant removal from office?</li>
+<li>Impeachement trial</li>
+<li>SCOTUS
+<ul>
+<li>??</li>
+<li>Indictment</li>
+</ul></li>
+<li>Persuasion: Will public acquiesce to gain power or say no?</li>
+</ul></li>
+</ul>
+<h2 id="process-of-impeachment">Process of Impeachment</h2>
+<p><strong>What is Impeachment?</strong></p>
+<ul>
+<li>Political / <code>jargon</code> Formal accusation of misconduct</li>
+<li>Political: An analog of a criminal indictment. Charge against a president which is then tried.</li>
+</ul>
+<p><strong>Constitutional Provisions</strong></p>
+<ul>
+<li>Upon impeachment for &amp; conviction of &gt; Treason, Bribery or other high crimes and misdemeanors</li>
+<li><ol type="1">
+<li>?? abuse of power?</li>
+</ol>
+<ul>
+<li>Johnson, Nixon</li>
+</ul></li>
+<li><ol start="2" type="1">
+<li>Behavior incompatible with office</li>
+</ol>
+<ul>
+<li>tax return fraud, sexual assault</li>
+</ul></li>
+<li><ol start="3" type="1">
+<li>Use office for personal gain</li>
+</ol></li>
+</ul>
+<p><strong>Constitutional Provisions</strong></p>
+<ul>
+<li>House has authority to impeach w/ majority vote.</li>
+<li>Senate has power to convict with 2/3 approval
+<ul>
+<li>Oath, Chief Justice</li>
+</ul></li>
+<li>Political process, not a legal one.</li>
+<li>MAY be convicted in justice system after.</li>
+</ul>
+<p><strong>2019 Articles of Impeachment</strong></p>
+<ul>
+<li>ARTICLE I: ABUSE OF POWER
+<ul>
+<li>Ukraine</li>
+</ul></li>
+<li>ARTICLE II: OBSTRUCTION OF CONGRESS
+<ul>
+<li>Trump admin directed officials to refuse to cooperate with congressional subpoenas</li>
+</ul></li>
+</ul>
+<h1 id="lecture-5">Lecture 5</h1>
+<h2 id="civil-liberty">Civil Liberty</h2>
+<ul>
+<li><code>Civil Liberties</code>: Restrictions on Government power for protecting your freedom to act.
+<ul>
+<li>Ammendments 1 through 8.</li>
+<li>come from bill of <strong>rights</strong></li>
+<li>Doesn’t restrict private actors</li>
+<li><strong>ex</strong> free speech, religion, unwarranted search &amp; seizures</li>
+<li><strong>ex</strong> exclusionary rule: prevents evidence gathered outside of [A4]</li>
+<li><strong>ex</strong> 5th Ammendment: right not to incriminate yourself</li>
+<li>Limits on Liberties:
+<ul>
+<li>can’t infringe on others’ rights.</li>
+<li><strong>ex</strong> can’t yell fire in a theater</li>
+<li><strong>e</strong> flag burning</li>
+</ul></li>
+</ul></li>
+<li><code>Civil Rights</code>: Claims we have on government action. Requirements on governments (and by extension, private actors) to provide equal treatment of people
+<ul>
+<li>come from 14th amendment</li>
+<li>Applies to workplace, <strong>ex</strong> workplace discrimination by gender / race</li>
+</ul></li>
+<li><code>Bill of Rights</code> defends <strong>liberties</strong></li>
+</ul>
+<h2 id="limits-on-liberties">Limits on Liberties</h2>
+<ul>
+<li>Religion and the Lemon test
+<ul>
+<li>[A1] Congress shall make no law …respecting the establishment of religion or prohibiting the free exercise thereof.
+<ul>
+<li><strong>ex</strong>
+<ul>
+<li>displaying 10 commandments</li>
+<li>teaching intelligent design</li>
+</ul></li>
+</ul></li>
+<li>Lemon v. Kurtzman:</li>
+<li>The national or state governments MAY make policy dealing with religion IF:
+<ul>
+<li>the policy has a secular purpose</li>
+<li>the primary effect is neither advancing nor inhibiting religion</li>
+<li>the government does not become excessively entangled with religion</li>
+</ul></li>
+<li><strong>ex</strong> school prayer:
+<ul>
+<li>fails 3 because of adjudicating use of different prayers.</li>
+</ul></li>
+<li><strong>ex</strong> illegal substance <em>use</em> for religion:
+<ul>
+<li>The drug law: passes 1, law passes 2, and 3.</li>
+</ul></li>
+<li><strong>ex</strong> teaching intelligent design
+<ul>
+<li>primary purpose is religious, so it fails 1. So teaching cannot be <em>mandated</em></li>
+</ul></li>
+</ul></li>
+<li>Free Speech
+<ul>
+<li>Brandenburg Test:
+<ul>
+<li>Brandenburg v. Ohio, 1969.</li>
+<li>There is a difference bt:
+<ul>
+<li>expression of ideas and statement of thoughts, which are protected</li>
+<li>fighting words or incitement to imminent lawless action, which are <em>not</em> protected.</li>
+</ul></li>
+<li><strong>ex</strong> Fighting words case 1942. Person can be punished if speech would lead to imminent lawless action eg assault</li>
+</ul></li>
+<li>only restrictions are outcome-based, relating to lawless action.</li>
+<li>govt allergic to restrictions that are content-based.</li>
+<li>Hate speech might be inflammatory / fighting words in some cases but in general its protected</li>
+<li>Gray areas: burning a cross on a yard: not protected
+<ul>
+<li>suggestion of moving nazi/far-right/white nationalist rhetoric, bend brandenburg.</li>
+</ul></li>
+<li>Exceptions and the Miller Test:
+<ul>
+<li>Miller v. California.</li>
+<li>sexually explicit material may be restricted iff it is obscene</li>
+<li>The govt may restrict “obscene” speech, defined as:
+<ul>
+<li>appeals to a prurient interest (according to community standards)
+<ul>
+<li>internet</li>
+</ul></li>
+<li>depicts sexual or excretory conduct in a patently offensive way</li>
+<li>taken as a whole lacks serious literary, artistic, political or scientific value.</li>
+</ul></li>
+<li><strong>ex</strong> comedian prosecuted for obscenity. Radio != print. Court reasoned that content restrictions on radio should be more restrictive.</li>
+<li><strong>ex</strong> KKK - march and then stray peacefully. Ok at the time</li>
+</ul></li>
+<li>Pause about far-right language.</li>
+<li>conservatives on other side of social order – <em>what?</em></li>
+</ul></li>
+<li>Abortion
+<ul>
+<li>4 cases to know.
+<ul>
+<li>Griswold vs Connecticut
+<ul>
+<li>Contraception: laws banning contraception up through 1960s.</li>
+<li>Connecticut: people arrested in clinic.</li>
+<li>argued BR implies a zone (penumbra) of privacy, protecting people against ban on contraception
+<ul>
+<li>Otherwise state would require a lot of information about the person from the state.</li>
+</ul></li>
+<li>Majority Opinion:
+<ul>
+<li>A1, 3, 4, 5: penumbra.</li>
+</ul></li>
+<li>Concurring opinions:
+<ul>
+<li>9th</li>
+<li>marital privacy is traditionally protected</li>
+<li>14th de process protects privacy</li>
+<li>law is “uncommonly silly” but the Court has no choice but to find it constitutional.</li>
+</ul></li>
+</ul></li>
+<li>Roe v. Wade
+<ul>
+<li>Roe became pregnant. Pregnant woman fired.</li>
+<li>Majority opinion
+<ul>
+<li>[A14] due process protects privacy which protects abortion, but this to be baanced against states interests in protecting life of the mother / potentiality of hman life</li>
+</ul></li>
+<li>Othsers
+<ul>
+<li>due process extends proadly beyond legal procedure to include privacy</li>
+<li>9th is poper</li>
+<li>some regulatoin permissible (eg certification of 2 physicians)</li>
+<li>abortion is a political question ofr legislatres and the public, <em>not a constitutional matter</em>. <!-- todo check --></li>
+</ul></li>
+</ul></li>
+<li>Planned Parenthood v. Casey, 1992.
+<ul>
+<li>Pennsylvania requirements for restricting abortion</li>
+<li>Regulations permissible so long as they dont place undue burden or obstacle on woman seeking abortion</li>
+<li>Majority:
+<ul>
+<li>Roe upheld, regulation of abortion permissible below the level of “undue burden”</li>
+</ul></li>
+<li>Others:
+<ul>
+<li>Trimester framework clearer, undue burden can’t be applied in practice.</li>
+</ul></li>
+</ul></li>
+<li>June Medical Services vs. Gee (upcoming)
+<ul>
+<li>Louisiana: reduce access to get around undue burden. Had admitting priviledges of hospitals up to 30 miles away.</li>
+<li>2014: SCOTUS struck down same law in TX, ruling that limiting supplu of doctors poses unsue burden under Plannned Parenthood. So why take up the case again? Means at least 4 justices are interested in taking the case. We suspect they have <em>something new to say</em></li>
+<li>Unlikely outcome: overturn Roe
+<ul>
+<li>would <strong>not</strong> mean abortion is illegal.</li>
+<li>BUT it means that states could individually ban it.</li>
+</ul></li>
+<li>More likely: Clearer rules about laws &amp; regulations that are acceptable.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="lecture-6">Lecture 6</h1>
+<h3 id="definitions">Definitions</h3>
+<ul>
+<li>Civil Libertues &amp; Civil Rights</li>
+<li>Human rights</li>
+</ul>
+<h3 id="constitutional-and-legal-foundations">Constitutional and Legal Foundations</h3>
+<p>Outline</p>
+<ul>
+<li>constitution</li>
+<li>Civil liberties were <em>right there</em></li>
+<li>Civil Rights
+<ul>
+<li>Citizenship, Voting, Education, Employment, Accommodation (housing)</li>
+<li>Development over time for different groups of people
+<ul>
+<li>Judicial decisions</li>
+<li>Constitutional amendments</li>
+<li>Some laws</li>
+<li>Executive orders</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Amendments</p>
+<ul>
+<li>13th, slavery?</li>
+<li>19th, women right to vote</li>
+<li>14th:
+<ul>
+<li>Birth citizenship &amp; equal protection</li>
+<li>still shaping law now.</li>
+</ul></li>
+</ul>
+<p>Some civil rights laws</p>
+<ul>
+<li>1924 native americans get citizenship</li>
+<li>1948 FDR &amp; Truman ban racial discrimination in military</li>
+<li>1993 Clinton “Don’t ask, don’t tell” - some tolerance for gays &amp; lesbians in military
+<ul>
+<li>homosexuals could be discharged but officials not allowed to inquire.</li>
+</ul></li>
+<li>2012 DACA</li>
+</ul>
+<p>Agencies</p>
+<ul>
+<li>helping make policies</li>
+<li>report to president</li>
+<li><strong>Executive orders</strong> control behavior of agency</li>
+<li>ex 1948 FDR &amp; Truman - way before civil rights movement</li>
+</ul>
+<p>Judicial Decisions</p>
+<ul>
+<li>1954 Brown v. Board of Education - banned “Separate but Equal” policies from Plessy.</li>
+<li>2–3 Lawrence v Texas: Banned state sodomy laws and other prohibitions on homosexual activity</li>
+</ul>
+<!-- todo expand -->
+<p>What</p>
+<ul>
+<li>Times places and manner</li>
+<li>First amendment [M1] Speech restrictions</li>
+</ul>
+<p>Historical persp. on Equality</p>
+<ul>
+<li>Jefferson in Declaration</li>
+<li>White men mostly</li>
+<li>wanted to overcome some class divisions. Biggest social divisions were regional
+<ul>
+<li>north was industrial, south agricultural</li>
+<li>hmilton new england enterprise</li>
+</ul></li>
+<li>Civil rights after Reconstruction
+<ul>
+<li>south blocked 13 14 15 amendments – remember</li>
+<li>Segregation, Plessy v. Fergison</li>
+<li>anti-euqlity put in after founding, then we’ve struggled to remove</li>
+<li><strong>Examples</strong>
+<ul>
+<li>1790 naturalization act - limitecd citizenship to free white imigrants</li>
+<li>1857 Dred Scott v. Sanford - blocked immigration for all blacks</li>
+<li>1882 Chinese exludsion act - denied citizenship to chinese immigrants</li>
+<li>1942 exec order FDR imprisonment of japanese americans
+<ul>
+<li>internment camps</li>
+</ul></li>
+<li>1986 Bowers v. Hardwick: andity-sodomy laws ruled constitutional, homosexual sex is a “crime against nature”</li>
+<li>2015 DOMA: Prohibited same-sex couples from receiving federal benefits.
+<ul>
+<li>Full Faith &amp; Credit Clause - each state has to recognize other states’ judicial decisions and laws</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="current-question---lgbtq-rights-in-workplace">Current Question - LGBTQ Rights in workplace</h3>
+<p>ex</p>
+<ul>
+<li>affirmative action
+<ul>
+<li>contested in courts</li>
+</ul></li>
+<li>University of Calif - no discrimination based on race</li>
+</ul>
+<p>Overview of LGBTQ Rights</p>
+<ul>
+<li>by 1960s institution of discriminatino widespread</li>
+<li>gay sex technically illegal in many states due to sodomy laws
+<ul>
+<li>CA - CR Leader arrested in Pasedina for having sex,</li>
+</ul></li>
+<li>2000 prop 22 limit marriage to man &amp; woman</li>
+<li>2008 CA SC prop 22 thrown out</li>
+<li>2008 Prop 8 state constitution amended
+<ul>
+<li>litigated to SCOTUS, who said it violated equal protection of 14th amendment</li>
+</ul></li>
+<li>US v. Windsor 2013
+<ul>
+<li>DOMA thrown out</li>
+</ul></li>
+<li>Obergeefell v. Hodges 2015
+<ul>
+<li>Precedent doesn’t make sufficient justification for limiting same-sex marriage</li>
+<li>mentions due process
+<ul>
+<li>part of [A14] - bearing on more rights than [A5].</li>
+</ul></li>
+</ul></li>
+<li>Lawrence v. Texas 2015
+<ul>
+<li>throws out sodomy laws</li>
+<li>emphasizes equal protection</li>
+</ul></li>
+<li>Protections now</li>
+<li>Unprotected now</li>
+<li>Equality Act of 2019 - LGBTQ same legal rights as others
+<ul>
+<li>not passed by senate</li>
+</ul></li>
+</ul>
+<p>Cases in SCOTUS now</p>
+<ul>
+<li><p>Background</p>
+<ul>
+<li>Civil Rights Act of 1964
+<ul>
+<li>Employment: Hire, Fire somebody based on race, color, religion, <em>sex</em>, or national origin</li>
+<li>Court: Does <em>sex</em> protection protect transsexual or queer people?</li>
+</ul></li>
+<li>Federal Judiciary
+<ul>
+<li>Federal: District courts (700 districts, eg SDCA &amp; SDNY), Circuit Appellate Court of Appeals (13 circuit courts)</li>
+</ul></li>
+</ul></li>
+<li><p>Case 1</p>
+<ul>
+<li>Bostock v. Clayton County - 11th circuit ~ GA/FL
+<ul>
+<li>fired after joining gay softball league</li>
+<li>fired</li>
+<li>argued based on Ciil rights act prevents sex discrimination</li>
+<li>top upheald lower</li>
+</ul></li>
+</ul></li>
+<li><p>Case 2</p>
+<ul>
+<li>Zarda v. Altitude Express</li>
+<li>fired for being gay</li>
+<li>sued. District court ruled same as in Bostock court. 2nd circuit court
+<ul>
+<li>Overturned lower.</li>
+</ul></li>
+</ul></li>
+<li><p>On the table now</p>
+<ul>
+<li>Does the civil rights act protect sexual orientation under the “sex” clause?</li>
+<li>Attorney for Bostock</li>
+</ul></li>
+<li><p>Case 3</p>
+<ul>
+<li>Harris Funeral Homes v. EEOC</li>
+<li>Circuit overturned DC saying firing involved stereotyping of gender behavior, which is covered by the civil rights act.</li>
+<li></li>
+</ul></li>
+<li><p>California: May employers fire you for being gay or transexual?</p></li>
+<li></li>
+</ul>
+<h2 id="section-3">Section 3</h2>
+<p>Impeachement structure</p>
+<ul>
+<li>historically some senators have been challenged with non-impartiality</li>
+</ul>
+<h3 id="civil-rights-and-civil-liberties">Civil Rights and Civil Liberties</h3>
+<p>Terms</p>
+<ul>
+<li><code>Civil Liberties</code> and the <code>Bill of Rights</code>
+<ul>
+<li>Restrictions on Government power for protecting your freedom to act</li>
+<li>come from Bill of Rights</li>
+</ul></li>
+<li><code>Civil Rights</code>
+<ul>
+<li>requirements on Gov &amp; Private actors protecting equal treatment</li>
+<li>Concern @ founding: How to protect people.</li>
+<li>Context
+<ul>
+<li>1776 const. written</li>
+<li>Fed &amp; Antifed
+<ul>
+<li>difference: south relied on slavery / human labor</li>
+<li>contention about bill of rights.</li>
+<li>This is why BoR wasn’t included until [1791]</li>
+<li></li>
+</ul></li>
+</ul></li>
+<li>come from [A14]</li>
+<li>Rights that people have in <strong>every</strong> sphere</li>
+</ul></li>
+<li><code>Human Rights</code></li>
+<li><code>Bill of Rights</code> - 1791
+<ul>
+<li>First 10 Amendments</li>
+<li>protects civil liberties</li>
+<li><ol type="1">
+<li>Free Speech, religion</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Bear Arms</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Housing of Soldiers</li>
+</ol></li>
+<li><ol start="4" type="1">
+<li>Protection from unreasonable search &amp; seizures</li>
+</ol></li>
+<li><ol start="5" type="1">
+<li>Protection of rights to Life, Liberty and Property</li>
+</ol></li>
+<li><ol start="6" type="1">
+<li>Right of accused - due process - trial</li>
+</ol></li>
+<li><ol start="7" type="1">
+<li>Right in civil for trial by jury cases where the value in controversy &gt; $20</li>
+</ol></li>
+<li><ol start="8" type="1">
+<li>No excessive Bail, cruel &amp; unusual punishment</li>
+</ol></li>
+<li><ol start="9" type="1">
+<li>Rights apply to other people</li>
+</ol></li>
+<li><ol start="10" type="1">
+<li>States &amp; Fed have power to reinterpret these rights</li>
+</ol></li>
+<li>States didn’t like it
+<ul>
+<li></li>
+</ul></li>
+</ul></li>
+<li>Amendments 13, 14, 15
+<ul>
+<li>Added after Bill of Rights - basis for <strong>Civil Rights</strong> Acts</li>
+<li>[A13] - Abolish Slavery</li>
+<li>[A14] - Civil Rights
+<ul>
+<li>Equal Protection under the Law</li>
+<li>still shaping law now</li>
+</ul></li>
+<li>[A15] - Voting Rights
+<ul>
+<li>Right to Vote as long as you’re a man</li>
+<li><span class="citation" data-cites="now">@now</span> North Carolina Voting ID</li>
+</ul></li>
+</ul></li>
+<li>Civil Rights Acts
+<ul>
+<li>Reinterpret [A13][a14] [A15] a lot.</li>
+<li>’57 and ’60 Jim Crow Laws targeted
+<ul>
+<li>Jim Crow laws:
+<ul>
+<li>Voting by jellybean</li>
+</ul></li>
+</ul></li>
+<li>1964 first big one
+<ul>
+<li>Expansion of Civil Rights</li>
+<li>Cannot discriminate in workplace or at school</li>
+<li>MLK</li>
+</ul></li>
+<li>1968
+<ul>
+<li>Literacy Tests - march against, baton response</li>
+<li>movie called “Selma”</li>
+</ul></li>
+<li>1974
+<ul>
+<li>cant discriminate on basis of sex</li>
+</ul></li>
+<li>1978
+<ul>
+<li>cant discriminate on basis of disability</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Look at <strong>Limits of Liberties</strong></p>
+<ul>
+<li>Brandenburg V. Ohio
+<ul>
+<li>Fire in movie theater</li>
+<li>Inciting violence</li>
+<li>Street corner vs in face</li>
+</ul></li>
+<li>Lemon v. Kurtzman 1971
+<ul>
+<li>Lemon Test - 3 points for Secular purpose of a law
+<ul>
+<li>policy must have a Secular Purpose</li>
+<li>primary effect neither enhance nor prohibit __ religion.</li>
+<li>govt doesn’t become excessively entangled w religion</li>
+</ul></li>
+</ul></li>
+<li>Miller v. CA
+<ul>
+<li>Miller test
+<ul>
+<li>appeals to prurient __ comm standards</li>
+<li>depcits ** conduct in ** way</li>
+<li>lacks __ value</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="lecture-8-1---bureaucracy">Lecture 8-1 - Bureaucracy</h1>
+<p>Bureaucracy Structure:</p>
+<ul>
+<li>2.7 million employees, 15 depts with ~270 agencies</li>
+<li>Definitions:
+<ul>
+<li><code>federal bureaucracy</code>: the 15 cabinet departments and their ~270 agencies, as well as ~140 independent agencies, commissions, and government corporations of the executive branc; it implements policy.</li>
+<li><strong>ex</strong> US Forest Service</li>
+<li><strong>ex</strong> Red Rock –&gt; president via chain of bureaucracy</li>
+<li><code>bureaucracy</code>: generic term for an organization with specialized functions internally, inflexible adherence to fixed rules, and hierarchy</li>
+<li><strong>ex</strong> the DMV, UCSB Registrar</li>
+<li><strong>ex</strong> FedEx, Amazon, Starbucks, UPS.</li>
+<li><code>bureaucratic</code>: a usually derogatory term suggesting inflexibility and apparently unproductive insistence on adherence to rules</li>
+<li><code>clientele</code> - eg Depts of Agriculture, Commerce, Energy. Purpose: Assist and promote an industry or other group
+<ul>
+<li><strong>ex</strong>: Department of Interior -&gt; Forest. Logging -&gt; Forestry</li>
+</ul></li>
+<li><code>regulatory</code>: eg FDA, EPA - control actions of industru……</li>
+<li><code>redistributive</code>
+<ul>
+<li>collect taxes and redistribute</li>
+</ul></li>
+<li><code>maintenance</code></li>
+</ul></li>
+<li>Misconceptions
+<ul>
+<li>bureaucracies are slow
+<ul>
+<li>in fact, they can be fast. Eg Starbucks</li>
+<li>Different bureaucracies optimized for / tuned for different purposes
+<ul>
+<li>(oversight by congress, accuracy of something, etc)</li>
+</ul></li>
+</ul></li>
+<li>Fed bureaucracy size
+<ul>
+<li>seems to get bigger and bigger, but thats a misconception</li>
+<li>Scope of contry has grown a lot - things we want government to be involved in</li>
+<li>local employment increasing</li>
+<li>fed civilian employment as % of workforce is decreasing</li>
+</ul></li>
+<li>democratic-ness
+<ul>
+<li>not regulated by constitution</li>
+<li>How is it controlled? What are its politics?</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="ingredients-for-bureaucracies">7 Ingredients for Bureaucracies</h2>
+<p><strong>7 Ingredients for Bureaucracies</strong></p>
+<ol type="1">
+<li>Internal desire for autonomy and growth.
+<ul>
+<li>not just property of Bcs, its people too.</li>
+<li>People advocate for more power for their own job / org.</li>
+</ul></li>
+<li>Legal and procedural discretion
+<ul>
+<li><strong>ex</strong> NWS,</li>
+<li><strong>non-ex</strong>: IRS</li>
+</ul></li>
+<li>extent f publc attention
+<ul>
+<li><strong>ex</strong> social security: under public scrutiny</li>
+<li><strong>ex</strong> minerals management: manages oil &amp; gas on public lands. Manages access to oil etc. Public doesn’t care at all.</li>
+</ul></li>
+<li>structure of interest group pressure
+<ul>
+<li>Some agencies face strong 2-sided pressure.
+<ul>
+<li><strong>ex</strong> EPA under pressure from likes of GM, Sierra Club.</li>
+</ul></li>
+<li>Sometimes pressure is lopsided.
+<ul>
+<li><strong>ex</strong>: Boeing pressure on FAA <!-- todo what is the pressure --></li>
+<li>Agencies controlling industru but ind is able to control agency</li>
+<li>cong. pressure either one</li>
+<li>“Industry has <strong>captured agency</strong>” when influence is great enough</li>
+<li><strong>ex</strong> Boeing 737 MAX – <strong>regulatory capture</strong>
+<ul>
+<li>Boeing got FAA to pass law / policy allowing Boeing to do their own safety inspections. THey got Congress to allow it</li>
+<li>Boeing got congress to provide oversight over FAA to exert influence &amp;
+<ul>
+<li>aerospace industry would head the board.</li>
+</ul></li>
+<li>Europe grounded all 737 MAX jets. US initially did nothing</li>
+<li>Boeing was under pressure from Airbus competitor.</li>
+<li>Now we know that going back to 2012 auditors couldn’t raise safety concerns without being retaliated against.</li>
+</ul></li>
+</ul></li>
+<li>Low Pressure
+<ul>
+<li><strong>ex</strong> FBI - not very policitized in recent decades</li>
+</ul></li>
+</ul></li>
+<li>culture of independance
+<ul>
+<li>culture of operating on expertise, indep. from political pressure</li>
+<li>high independance &amp; discretion</li>
+</ul></li>
+<li>concentrated benefits vs. distributed costs
+<ul>
+<li>Sometimes agencies don’t really go away even when they don’t scale with GDP</li>
+<li><strong>ex</strong> (TVA) TN Valley Authority - provide electricity for people suffering in the great depression.
+<ul>
+<li>its a clientele agency</li>
+<li>small gp of people invested in what it does. People who use lakes / electricity would be up in arms if it were closed.</li>
+<li>But at the same time no constituency to remove it.</li>
+</ul></li>
+<li><strong>ex</strong>: UCSB - somebody lives in San Muigel on 2nd floor. Imagine plan where people get $500 per month. Would cost $5 per quarter for <em>all</em> students to pitch in. Regents have a meeting at 7:30 AM in Campbell Hall.</li>
+<li>What happens at later meeting, after 2 quarters? People who have adjusted lives around this extra money. They are going to be SUPER motivated to voice support for this. So small but vocal advocacy can keep it going.</li>
+</ul></li>
+<li>desires of Congress and the President
+<ul>
+<li>Congress passes a budget every year which controls funding for agencies.</li>
+<li>They can subpoena people from agencies to explain what they did</li>
+<li>Conflict / Tension between congress and president over regulations on agencies.</li>
+</ul></li>
+</ol>
+<h1 id="section-4---mt-1-review">Section 4 - MT 1 Review</h1>
+<ol type="1">
+<li>Collective action, free use, public good – LGSA
+<ul>
+<li>Collective Action -
+<ul>
+<li>wants to know that for a group to compe together, they - agroup can come to gether to influence a politician to run on your interests.</li>
+</ul></li>
+<li>Free riding - people who don’t participate in collective action but receive benefit. In this case the public good.</li>
+<li>come up with examples</li>
+</ul></li>
+<li>What was the Great Compromise?
+<ol type="1">
+<li>what were the two sides?</li>
+<li>Example of policy impact later</li>
+</ol>
+<ul>
+<li>Dichotomies:
+<ul>
+<li>Big states / Small states</li>
+<li>Federalist / Anti-federalist</li>
+<li>North / South</li>
+</ul></li>
+<li>Looking for Larger / Smaller</li>
+<li>Structure of Information
+<ul>
+<li>some states are larger and are upset about representation.</li>
+<li>Large states wanted proportional representation, etc.</li>
+</ul></li>
+<li>Example policy
+<ul>
+<li>3/5 compromise</li>
+<li>federal funding</li>
+</ul></li>
+</ul></li>
+<li>What are the three types of federalism discussed in LGSA?
+<ol type="1">
+<li>Name each type</li>
+<li>Say how the national/state governments interact for each type</li>
+<li>Give an example policy for each type (law, ruling, or grant).</li>
+</ol>
+<ul>
+<li>Dual Federalism
+<ul>
+<li>Jim Crow. DF gave states more authority -&gt; allowing Jim Crow</li>
+</ul></li>
+<li>Cooperative Federalism
+<ul>
+<li>transitioned after the <strong>great depression</strong></li>
+<li>New Deal: gov spending project to stimulate the economy</li>
+</ul></li>
+<li>Regulated Federalism / New Federalism / Current Contests
+<ul>
+<li>govt imposing policies on states to meet national standards</li>
+<li>based on funding.</li>
+<li><strong>ex</strong>: Late 70s, drinking age used to be 18. Mothers use [collective] action “MAD” Mothers Against Drinking - congress doesn’t pass law, but able to incentivize states to change policy(highway funding).</li>
+</ul></li>
+<li>Strategy
+<ul>
+<li>define Dual, Cooperative, and Regulated Federalism.</li>
+<li>Think chronologically - how relationship evolved &amp; transitioned</li>
+<li>examples - of policies</li>
+</ul></li>
+</ul></li>
+<li>In the case Brandenburg v. Ohio, Lemon v. Kurtzman the supreme court established limits on - restriction of 1st amendment
+<ol type="1">
+<li>What did supreme court say in each case?</li>
+<li>give 1 example for each ruling, applying it to a scenario</li>
+</ol>
+<ul>
+<li>Strategy:
+<ul>
+<li>1st amendment, Freedom of speech and religion</li>
+<li>Brandenburg - imminent lawless action
+<ul>
+<li>eg. KKK</li>
+</ul></li>
+<li>Lemon test
+<ul>
+<li>secular purpose</li>
+<li>neither advancing nor inhibiting religion</li>
+<li>entablement</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>What is supreme court considering in <em>Bostock v. Clayton County AND Zarda v. Altitude Express?</em>
+<ol type="1">
+<li>state the question</li>
+<li>example 1 point argued by each side</li>
+</ol>
+<ul>
+<li>Case:
+<ul>
+<li>employee fired for being gay</li>
+<li>Question: “Does the 14th amendment’s language protecting discrimination based on <em>sex</em> extend to cover homosexuality?” <!-- todo include points from each side that I put on my test after I get MT1 back --></li>
+</ul></li>
+</ul></li>
+<li>What does “going public” refer to? What does LGSA say are its limits?
+<ul>
+<li>imperial presidency <!-- todo how is "going public" related to the imperial presidency --></li>
+<li>“Going public” = where president appeals to public to gather political support</li>
+<li>limits: presidents say they’ll do more than they actually do, so approval goes down.</li>
+</ul></li>
+<li>From lecture, what three classes of action has the House of Representatives historically used as met the bar of “High Crimes and Misdemeanors” in impeachments?
+<ul>
+<li>Improperly exceeding or abusing the powers of office
+<ul>
+<li>[1868] Andrew Johnson; for violating an act of congress relating to dismissing appointees, and for questioning the legislative authority of congress</li>
+<li>[1974] Richard Nixon; for using powers of presidency to obstruct the watergate criminal investigation; and failing to comply with congressional subpoenas.</li>
+</ul></li>
+<li>Behavior incompatible with the function and purpose of the office
+<ul>
+<li>[1986] Judge Harry Claiborne - tax fraud</li>
+<li>[2009] Judge samuel Kent - sexual assault &amp; lie</li>
+</ul></li>
+<li>Misusing the office for an improper purpose or for personal gain;
+<ul>
+<li>[2019] Judge Thomas Porteous Jr., for accepting things of value in return for helping a bondsman to corrupt state judges.</li>
+</ul></li>
+</ul></li>
+</ol>
+<h1 id="lecture-9-1-congress">Lecture 9-1: Congress</h1>
+<h3 id="getting-oriented">Getting oriented</h3>
+<ul>
+<li>[#institution] principle heavy
+<ul>
+<li>Leadership structure</li>
+<li>Committees</li>
+<li>Legislative process</li>
+</ul></li>
+</ul>
+<p>Functions</p>
+<ul>
+<li>Checking power: Congress takes lead on issues
+<ul>
+<li><strong>ex</strong> Challenger blew up - congress called NASA</li>
+<li><strong>ex</strong> Congress can call in agencies</li>
+</ul></li>
+<li>Deliberating: Gather information, debating issues <!-- ** Legislative process -->
+<ul>
+<li>Federalist papers thought bad ideas would get ‘rooted out’ in debate</li>
+<li>Exercise for understanding your opinion:
+<ul>
+<li>level 1: you might not have one.</li>
+<li>level 2: of sophistication: You have opinion but not reasons</li>
+<li>level 3: Have opinion and reasons, can state some arguments like in a debate</li>
+<li>Level 4: Best is understanding reasons of people you disagree with</li>
+</ul></li>
+</ul></li>
+<li>Making Policy / Legislating
+<ul>
+<li><strong>ex</strong> IRS: constitutional amendment [M16] to make income tax</li>
+<li><strong>Problem:</strong> Executive branch has a lot of power / influence over other branches</li>
+</ul></li>
+</ul>
+<h3 id="three-major-malfunctions-of-congress">Three major malfunctions of congress</h3>
+<ul>
+<li>Polarization
+<ul>
+<li>In congress, MCs are further apart:
+<ul>
+<li>ideologically: more polarized, more in-party voting. More members have extreme views, less moderates.</li>
+<li>in affectiveness: There’s more personal dislike between members.</li>
+<li><a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/02/13/polarization-in-congress-has-risen-sharply-where-is-it-going-next/">chart</a> from Wapo.</li>
+</ul></li>
+<li><strong>ex</strong> Newt Gingritch: encouraged people to be more ‘nasty’. Leader in republican party by 1990.</li>
+<li>Trump rhetoric makes legislation harder - “human scum”</li>
+</ul></li>
+<li>Gerrymandering
+<ul>
+<li>Phenomenon only in the house</li>
+<li><strong>pr</strong> Senate is “big leagues”</li>
+<li>Population growth / change means # of reps per state needs to change
+<ul>
+<li><img src="2020-02-05-11-43-10.png" /></li>
+</ul></li>
+<li>Cracking, Packing</li>
+<li>[sc] Vieth v. Juberlirer, [2004], [sc] Rucho v. Common Cause, [2019]
+<ul>
+<li>Does constitution prevent partisan gerrymandering?</li>
+<li>free speech or equal protection</li>
+<li>SC said not in reach by courts</li>
+<li><strong>pr</strong> unprincipled</li>
+</ul></li>
+<li>[sc] Miller v. Johnson, [1995]
+<ul>
+<li><strong>pr</strong> Race / [M14] - racial disparities in congress</li>
+<li>republican support for getting rid of racial gerrymanders</li>
+<li>SC said race is protected, but party is not.</li>
+</ul></li>
+</ul></li>
+<li>Campaign Finance
+<ul>
+<li>We fund elections by people who have a stake</li>
+<li>Things to know:
+<ul>
+<li>Incumbent re-election rates are 80% (S) to 90% (H)</li>
+<li>Winning a seat is expensive - $2M H, $16M S
+<ul>
+<li><img src="2020-02-05-12-02-26.png" /></li>
+</ul></li>
+<li>Candidates spending the most win 80% (S) to 90% (H) of races.</li>
+<li>Donations are intended both to affect who wins and to buy influence with the expected winner.
+<ul>
+<li>influence goes both ways</li>
+<li>When you give money, you can influence them if they think you can give more later</li>
+<li><strong>pr</strong> Not a whole lot different than bribery</li>
+</ul></li>
+<li>Funding comes primarily from individual citizens and secondarily from interest groups (PACs)
+<ul>
+<li>donations by <em>individuals</em> fund elections and interest groups</li>
+</ul></li>
+<li>Most individual donations (bulk of total funding) come from under 1% of the public, and favor Democrats</li>
+<li>Interest group donations favor incumbents and Republicans</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="lecture-9---the-federal-courts">Lecture 9 - The Federal Courts</h1>
+<p>Course Structure so far:</p>
+<ul>
+<li>Institutions / Principles</li>
+<li>3 Branches. Today: Courts and Supreme Court</li>
+<li>Next: Practice of Politics: Media, interest groups</li>
+</ul>
+<h2 id="federal-court-structure">Federal Court Structure</h2>
+<h3 id="circuit-courts">Circuit Courts</h3>
+<ul>
+<li>structure
+<ul>
+<li>composition ?</li>
+</ul></li>
+<li>name
+<ul>
+<li>why called “Circuit?”</li>
+</ul></li>
+<li>process
+<ul>
+<li>questions of “fact” left behind - those left for lower courts</li>
+<li>Ask questions about “civil rights” / due process / etc</li>
+</ul></li>
+</ul>
+<h3 id="supreme-court">Supreme Court</h3>
+<ul>
+<li>structure
+<ul>
+<li>9 judges</li>
+</ul></li>
+<li>Checks &amp; Balances
+<ul>
+<li><strong>tldr</strong> not many</li>
+<li>nomination, senate-approval</li>
+<li>salary cannot be decreased during term</li>
+<li>impeachment, but thats a big deal</li>
+<li>life-long terms</li>
+</ul></li>
+<li>function
+<ul>
+<li>constitutionality of laws - Judicial Review
+<ul>
+<li>doesn’t intervene immediately, waits for suits to come up</li>
+<li>only takes 4 judges</li>
+</ul></li>
+<li>decide whether a power is for states / fed / both</li>
+<li>decides which cases to hear -&gt; politically interesting</li>
+</ul></li>
+</ul>
+<h2 id="judicial-review">Judicial Review</h2>
+<p>When law is declared unconstitutional</p>
+<!-- todo check definition -->
+<p>Supreme Court</p>
+<ul>
+<li><strong>ex</strong> first time SC asserted itself was [1803]</li>
+<li>not much repercussion for declaring a law unconstitutional
+<ul>
+<li>constitution is hard to change</li>
+</ul></li>
+</ul>
+<p><strong>Flag Burning</strong></p>
+<ul>
+<li><strong>ex</strong> [sc][1989] Johnson v. Texas
+<ul>
+<li>Brandenburg: Govt cannot ban speech <strong>based on content</strong> <!-- * Google? --></li>
+<li>Burning a flag is a statement of opposition to gov, so is protected by [M1] free speech rights.</li>
+</ul></li>
+<li>Flag Protection act - President Bush
+<ul>
+<li>[sc][1989] U.S. v. Eichman - Affirms Johnson v. Texas</li>
+</ul></li>
+<li>Constitutional Amendment
+<ul>
+<li>adding another power</li>
+<li>restricting [M1]</li>
+<li>[aside] constitutional amendments:
+<ul>
+<li>requirements to make one</li>
+<li>2/3 senate</li>
+<li>3/4 house</li>
+</ul></li>
+<li>amendment (would be [M28]) FAILED</li>
+</ul></li>
+<li>paradox
+<ul>
+<li>serve as guardians of the constitution</li>
+<li>but few checks on power</li>
+</ul></li>
+</ul>
+<h2 id="interpreting-the-constitution">Interpreting the Constitution</h2>
+<!-- todo random: breadcrumbs for md outline -->
+<ul>
+<li><p>Types of questions that [sc] rules on</p>
+<ul>
+<li><strong>ex</strong> [Bostock v. Zarda]</li>
+<li>compelling arguments</li>
+<li><strong>ex</strong> Federalsim : Dual - coop - reg
+<ul>
+<li>congress no power ot ban guns in school zones</li>
+<li>gun regulation -&gt; non obv. constitutional questions:
+<ul>
+<li>M2 has restrictions</li>
+<li>Jurisprudence makes limits</li>
+<li>Semi-auto - live question</li>
+<li>some reg. possible.</li>
+</ul></li>
+<li>Court took it as Federalism question , does commerce clause protect? - answer was NO</li>
+</ul></li>
+<li><strong>ex</strong> Ro v. Wade
+<ul>
+<li>some thoguth it was about privacy, some throught about due process. <strong>not stragightforward questiosn</strong></li>
+<li>Regardless of your stance on life/choice you should see that <strong>for the court</strong> they’re trying to <strong>wrestle</strong> with tough questions.</li>
+</ul></li>
+<li>Upshot
+<ul>
+<li>They are poeple just like us</li>
+<li>have opinions, ideology,</li>
+<li>try to balance that with interpreting constitution</li>
+</ul></li>
+</ul></li>
+<li><p>Poolarization in congress -&gt; inability to <strong>deliberate</strong></p></li>
+<li><p>[sc] justices ask questions, have attorneys, work on sopphisticated legal arguments, <strong>motivated</strong> by their opinions / values and wha tthey want outcome to be</p>
+<ul>
+<li>they deliberate w/ each other</li>
+</ul></li>
+<li><p>Questions like Brandenberg are <strong>rare</strong> where people agree on merits of argument</p></li>
+</ul>
+<p><strong>How do they go about doing things?</strong></p>
+<ul>
+<li><img src="2020-02-07-11-45-46.png" /></li>
+<li>task: heavy burden, weighty decisions, meaning of constitution, <strong>___</strong></li>
+<li>Applying question of old document to contemporary problems
+<ul>
+<li>radio, internet</li>
+<li>question: What to do with old document written for <em>pre-industrial</em> society?</li>
+</ul></li>
+<li><strong>Judicial Restraint</strong>
+<ul>
+<li>theory: job of [sc] in judicial review is to follow written constitution as closely as possible, or follow <strong>intent / meaning</strong> in federalist papers. If there’s ambiguity then that’s a question for congress.
+<ul>
+<li>[sc] Marbury vs Madison <!-- todo lookup --></li>
+<li>Roberts in rucho case on gerrymandering : Roberst says its not SCs job to deal with this problem.</li>
+</ul></li>
+</ul></li>
+<li><strong>Contemporary Meaning</strong>
+<ul>
+<li>no deference to congress to solve meaningful problems</li>
+<li>judge says “we’re going to apply the old law to new situation”</li>
+<li><strong>ex</strong> [1964] civil rights -&gt; sex then means no gender discrimination now.</li>
+<li>part of process is interpreting constitution using your own theory in your mind and make a legal argument / ruling about it
+<ul>
+<li>this seems a bit sketchy</li>
+</ul></li>
+<li>SC delegated to states things that Fed hasn’t made laws on
+<ul>
+<li>?</li>
+</ul></li>
+<li>somewhat acts in loosely responsive way to public opinion</li>
+<li>has to make decisions that public will agree to</li>
+<li>power
+<ul>
+<li>president could appoint more justices</li>
+<li>!! Things are too heavily reliant on <strong>consent</strong> and <strong>good faith</strong>
+<ul>
+<li>? Could this be improved with more checks &amp; balances?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="the-roberts-court">The Roberts Court</h2>
+<ul>
+<li>2020 election
+<ul>
+<li>presidency</li>
+<li>senate composition</li>
+<li>supreme court composition</li>
+<li>state legislatures, gerrymandering power</li>
+<li>federal court judge nominations</li>
+</ul></li>
+</ul>
+<h1 id="section-5---review-of-first-half-of-the-course">Section 5 - Review of First Half of the Course</h1>
+<p><strong>Bureaucracy</strong></p>
+<ul>
+<li>4 Classes
+<ul>
+<li><strong><code>clientele</code></strong>
+<ul>
+<li>represent specific industrial interest</li>
+</ul></li>
+<li><strong><code>regulatory</code></strong>
+<ul>
+<li>control actions of an industry</li>
+<li>eg regulating emissions</li>
+<li>not pertainign to law</li>
+<li>EPA</li>
+<li>McDonalds Netflix <!-- * look up --></li>
+</ul></li>
+<li><strong><code>redistributive</code></strong>
+<ul>
+<li>maintain minimum level to keep all americans afloat</li>
+<li>social security</li>
+<li>collection and redistribution</li>
+</ul></li>
+<li><strong><code>maintenance</code></strong>
+<ul>
+<li>law enforcement</li>
+<li>FBI</li>
+</ul></li>
+</ul></li>
+<li>Federal Bur
+<ul>
+<li>4 classes - CAbinet - Independant agenceies - Reg. commisopns - Gov corporations <!-- todo fill in --></li>
+</ul></li>
+<li>Purpose - Why do Bureaucracies exist?
+<ul>
+<li>ch 8: Implementing</li>
+<li>settling disputes within the government</li>
+<li>Congress designs robot</li>
+<li>Entity constructed via congress
+<ul>
+<li>funded via congress</li>
+<li>“political insulation”</li>
+<li>too weak -&gt; cant do its job</li>
+<li>too strnog -&gt; becomes too powerful</li>
+</ul></li>
+</ul></li>
+<li>Powers and Limits
+<ul>
+<li>congress: pass laws
+<ul>
+<li>design / architect organization</li>
+<li>exec branch gets to run it</li>
+<li>exec: veto, override with 3/5 of senate</li>
+<li>funding</li>
+<li>call people in</li>
+</ul></li>
+<li>EPA Example
+<ul>
+<li>Created by Nixon: Executive order</li>
+<li>expanded. Now controls emissions</li>
+<li>Clean Air Mandate
+<ul>
+<li>doesn’t include green house gasses</li>
+<li>Lawsuit -&gt; Ruling -&gt; GGs regulated</li>
+<li>!! judicial power</li>
+</ul></li>
+<li>Top-down restructuring under presidency
+<ul>
+<li>eg. Trump didnt like “CPP” trump now wants “ACE”. Now says they’re going to fund coal to make it more efficient.</li>
+</ul></li>
+<li>not politically insulated</li>
+</ul></li>
+</ul></li>
+<li>2 Problems with Bureaucracy
+<ul>
+<li>Lopsided Pressure
+<ul>
+<li>ex. FAA &amp; airlines</li>
+</ul></li>
+<li>Principal Agent
+<ul>
+<li>appointed by executive branch</li>
+</ul></li>
+</ul></li>
+<li>Principles
+<ul>
+<li>rationality: self-interest for heads and funding etc</li>
+<li>institutional issues</li>
+</ul></li>
+</ul>
+<p>Congress</p>
+<ul>
+<li>3 Failings
+<ul>
+<li>Polarization
+<ul>
+<li>Happens because:
+<ul>
+<li>Newt Gingritch - “be more nasty”</li>
+<li>Why? its complicated</li>
+</ul></li>
+<li>Voting aligment</li>
+<li>Talking less</li>
+<li>** aside
+<ul>
+<li>dem primary</li>
+<li>registered</li>
+<li>Joe Walks ~ Bill Weld
+<ul>
+<li>didn’t like “anyone but trump” mindset</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Gerrymandering
+<ul>
+<li>districting</li>
+<li>every year?</li>
+</ul></li>
+<li>Campaign Finance
+<ul>
+<li>costs LOTS of money to run</li>
+</ul></li>
+</ul></li>
+</ul>
+<!-- ! MT 1 Raw score mean = 68 -->
+<h1 id="lecture-10---public-opinion">Lecture 10 - Public Opinion</h1>
+<p>Main idea:</p>
+<ul>
+<li>we want the government to do things that we want</li>
+<li>that translates to policies</li>
+</ul>
+<h2 id="public-opinion">Public Opinion</h2>
+<ul>
+<li>LGSA: <strong><code>Public Opinion</code></strong>: Ciizens’ attitudes aabout political issues, leaders, instututions, and events</li>
+<li>“attitude” != “values”. Values influence opnions regarding current environment.</li>
+<li><strong><code>Individual Opinion</code></strong> Attitudes held by induvuduals. The collection of attitudes held by an individual at any given time.
+<ul>
+<li><strong>4 levels of sophistication</strong>
+<ul>
+<li>no opinion ….. people who know opponents’ arguments.</li>
+</ul></li>
+</ul></li>
+<li><strong><code>Aggregate Opnion</code></strong>: A sum of a group of inivuduals opinions into an average.
+<ul>
+<li>sophistication matters less</li>
+</ul></li>
+</ul>
+<h2 id="public-opionion-and-institutions">Public Opionion and Institutions</h2>
+<ul>
+<li>ROLE: Institutions / behaviors should (maybe indirectly) reflect what people want</li>
+<li>historical context
+<ul>
+<li>john adams: cant have a direct democracy</li>
+<li>alexander hamilton:</li>
+<li>james madison:</li>
+</ul></li>
+<li>levels:
+<ul>
+<li>house: most open to public opinion
+<ul>
+<li>only (federal) institution to originally have direct elections</li>
+<li>2 year terms</li>
+<li>changes: more ‘safe’ seats than contentious ones. <em>Gerrymandering</em></li>
+</ul></li>
+<li>senate
+<ul>
+<li>“saucer” - slow down passions in house</li>
+<li>6 year ters, staggered elections</li>
+<li>changes: direct elections. House -&gt; Senate -&gt; President common track.</li>
+</ul></li>
+<li>executive branch:
+<ul>
+<li>indirect elections</li>
+<li>changes: Rhetorical presidency, Delegates defer to electorate.
+<ul>
+<li><strong>Q</strong> dude says president is becoming more of a directly-elected position</li>
+<li>Rhetorical presidency = going public at grand scale. President is more willing to respond to public opinion.</li>
+</ul></li>
+</ul></li>
+<li>federal courts:
+<ul>
+<li>immune from public opinion</li>
+<li>lifetime appointments</li>
+<li>changes: Ideological Appointments</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="public-opinon-and-policy">Public Opinon and Policy</h2>
+<p>What effects whenthe gov does things?</p>
+<ul>
+<li><p>Shootings &amp; gun laws: decrease after shootings</p></li>
+<li><p>’08 split (among republicans?) over gun law restrictions</p></li>
+<li><p>marijuana: steady increase over time</p></li>
+<li><p>Conditions of public opinion</p>
+<ul>
+<li>Strong majorities to counteract vocal minorities</li>
+<li>Bi-partisan support - makes things difficult to get done</li>
+<li>widespread distribution - get enough districts to vote in your favor <!-- + types of distributions --></li>
+</ul></li>
+</ul>
+<h2 id="public-polarization">Public Polarization</h2>
+<p>Is the public as polarized as congress?</p>
+<ul>
+<li><p>Basic polarization: Clustering around extreme positions. distribution-distance</p></li>
+<li><p><strong><code>Ideological Polarization</code></strong>: Parties diverge with one another on policy positions</p></li>
+<li><p><strong><code>Affective Polarization</code></strong>: Parties diverge with one another based on their <em>feelings</em> towards one another, not their pilicy preferences.</p>
+<ul>
+<li>not about issues. about <strong>affect</strong> ~ emotion.</li>
+</ul></li>
+<li><p><strong><code>Partisan Sorting</code></strong>: Political parties are more distunct form one another idologicaally, resulting in little ideological overlap.</p>
+<ul>
+<li>“more extreme candidates being elected to (both) major parties”</li>
+</ul></li>
+<li><p><strong>Is the Public Polarized?</strong></p>
+<ul>
+<li>Yes, but its complicated.</li>
+<li>Not much ideological polarization (policy differences)
+<ul>
+<li>people can ‘change’ their opinions if their party supports it, because its uncomforatble to not agree with your party.</li>
+</ul></li>
+<li>A gread deal of widespread affective polarization (dislike of other party)</li>
+<li>Better sorted parties make the public <em>look</em> more polarized
+<ul>
+<li>civility -</li>
+<li>“dem pres. wouldnt be respected by republicans b/c would be illegitimate exercise of democracy”</li>
+<li>“seeing that with current administration right now”</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="lecture-11-presidential-election-process">Lecture 11: Presidential Election Process</h1>
+<p>News today: Roger Stone Prosecution</p>
+<ul>
+<li>Lecture 7: Burocracy.
+<ul>
+<li>low political pressure: DOJ</li>
+<li>Roger stone
+<ul>
+<li>7 felony convictions, lying to congress, witness intimidation</li>
+</ul></li>
+</ul></li>
+<li>Leture 3: Separation of Powers
+<ul>
+<li>War Powers</li>
+<li>congress asserting power to decide when US goes to war - would make it illegal to go to war with Iran.
+<ul>
+<li><a href="https://www.npr.org/2020/02/13/805594383/senate-approves-legislation-to-limit-presidents-war-powers-against-iran">NPR story</a></li>
+</ul></li>
+<li>I think this is despite trump previously saying hed veto the resolution</li>
+</ul></li>
+<li>(also <a href="https://www.cnn.com/2020/02/13/politics/pentagon-border-wall/index.html">border wall funding</a>)</li>
+</ul>
+<h2 id="the-eccentricities-of-us-elections">The Eccentricities of US Elections</h2>
+<p>Is what we have any good?</p>
+<ul>
+<li>we wouldnt get what we have now if we started again [#history]</li>
+<li>Evidence: Nobody else does it</li>
+</ul>
+<p>Eccentricities:</p>
+<ul>
+<li>Frequency - we have a lot of elections</li>
+<li>duration - elections take a long time</li>
+<li>primary system</li>
+<li>electoral college - this is crazy</li>
+</ul>
+<p>Distinguising features:</p>
+<ul>
+<li>first-past-the-post plurality</li>
+<li>low turnout <!-- todo fill in 1 more --></li>
+</ul>
+<h2 id="origins-of-our-election-system">Origins of our Election System</h2>
+<p>US Democracy:</p>
+<ul>
+<li>History of Democracy:
+<ul>
+<li>its not true that democracy is the “final state” of ruling mechanisms</li>
+<li>failure of democracy in Germany 1920s</li>
+<li>Evidence of demoacracy “backsliding” in some places (south america?)</li>
+</ul></li>
+<li>Federalist #10 instability of democracy
+<ul>
+<li>manner of electing president / congress would contribute to instability</li>
+<li>thgoutht that <strong>small number</strong> of people would make best choices -&gt; <strong>indirect</strong> <!-- todo fill in  --></li>
+<li>super interesting that they really thought people would be so dis-engaged</li>
+</ul></li>
+<li>last time: we <strong>accept</strong> SC rulings, president <strong>doesnt intervene</strong> in trials, …
+<ul>
+<li>features that depend on norms</li>
+</ul></li>
+</ul>
+<h2 id="the-long-mytho-of-more-democracy">The Long Mytho of “More Democracy”</h2>
+<p>idea: More leections means more or better democracy</p>
+<h3 id="steps-of-more-elections">6 Steps of More Elections</h3>
+<ul>
+<li>moving <strong>away</strong> from their opinion that more public opinion makes thing more unstable</li>
+</ul>
+<ol type="1">
+<li>Nominating conventions to engage public
+<ul>
+<li>public elections. End of jacksonian era <!-- todo Q Jacosonian Era
+   conventions broad, then conventsions w delegates ... --></li>
+</ul></li>
+<li>General elections by the public to direct the EC</li>
+<li>Primary elections and caucises for delegates</li>
+<li>public elections for senate</li>
+<li>Direct democracy in the states
+<ul>
+<li>womens suffrage</li>
+<li>direct senate elections</li>
+<li>some places open direct democracy - allow public vote to become law</li>
+<li>end run around representation</li>
+</ul></li>
+<li>Primaries and caucuses become binding
+<ul>
+<li>end of [1960]s</li>
+</ul></li>
+</ol>
+<h3 id="primaries">Primaries</h3>
+<p>things</p>
+<ul>
+<li><a href="https://www.nationalpopularvote.com/state-status">NaPoVo</a></li>
+<li><img src="2020-02-14-11-41-09.png" /></li>
+<li>voting new hampshire: <img src="2020-02-14-11-48-06.png" /></li>
+</ul>
+<p>Deleagetes and Votes</p>
+<p>Money</p>
+<ul>
+<li>US spends between 10x and 100x times the money as UK does on electing leader</li>
+<li>Primary process: adds to cost, O($500M)</li>
+</ul>
+<p>Unintendec consequences of Electoral College throughout history:</p>
+<ul>
+<li><a href="https://www.politico.com/2020-election/president/democratic-primary/candidates/fundraising-and-campaign-finance-tracker/">MONEY</a>
+<ul>
+<li>elections are expensive</li>
+</ul></li>
+<li>news media influence
+<ul>
+<li>people want to vote for people they think can win</li>
+</ul></li>
+</ul>
+<h2 id="partisan-identity-and-voting">Partisan Identity and Voting</h2>
+<ul>
+<li>skipped</li>
+</ul>
+<h1 id="section-6---courts">Section 6 - Courts</h1>
+<p>Cases group 1:</p>
+<ul>
+<li>[sc] Veth v. Jubiler and Rucho v. Common Cause [2019]
+<ul>
+<li>Question: Does constitution prevent <em>Partisan gerrymandering</em>?</li>
+<li>ruling: no it doesn’t, (ITS OKAY), SC said not in ____ of courts</li>
+</ul></li>
+<li>[sc] Muller v. Johnson - question: Is racial gerrymandering constitutional? - ruling: no, not if that’s primary overwhelming reason - equal protection clause <!-- todo q: intent v. effect --> group 2:</li>
+<li>[sc] Marbury v. Madison
+<ul>
+<li>established <strong>judicial review</strong></li>
+<li>ability for judiciary to
+<ul>
+<li>hold 2 branches accountable under constitutional law</li>
+<li>paradox: Constitution is THE doc on how to run democracy
+<ul>
+<li>BUT final evaluation is done by autocratic part</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Paradox of Judicial Review
+<ul>
+<li>give unchecked power to evaluate document which determines constitutionality – what other branches can do.</li>
+</ul></li>
+</ul>
+<p>Public Opinion:</p>
+<ul>
+<li>Def: 2 Levels of <strong><code>Public Opinion</code></strong>:
+<ul>
+<li>def: Ciizens’ attitudes aabout political issues, leaders, instututions, and events</li>
+<li><ol type="1">
+<li>Individual</li>
+</ol>
+<ul>
+<li>attitudes held by individuals. Can have levels of sophistication</li>
+</ul></li>
+<li><ol start="2" type="1">
+<li>Aggregate</li>
+</ol>
+<ul>
+<li>an average of opinions of people in a group. Don’t have sophistication</li>
+</ul></li>
+<li>factors of individual opinion
+<ul>
+<li>Preference
+<ul>
+<li>what I want is goverend by [#rationality]</li>
+</ul></li>
+<li>Beliefs
+<ul>
+<li><strong>how do you believe your actions will have consequences?</strong></li>
+<li>understanding of ?sphere? youre in</li>
+<li>[#collective] action</li>
+</ul></li>
+<li>Option
+<ul>
+<li><strong>options matter bc you dont come up with opinions in a vacuum.</strong></li>
+<li>institutions or collective action</li>
+<li>grouping interests togeter</li>
+<li>creating coalitions</li>
+<li>choices or options</li>
+<li>[#rationality]</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Polarization:</p>
+<ul>
+<li>3 factors
+<ul>
+<li>Ideological</li>
+<li>Affective</li>
+<li>Partisan Sorting
+<ul>
+<li><strong>ex</strong> historical: D TNN ~ R TNN but now D TNN ~ D CA</li>
+<li>ideas get sorted / amalgomated / sorted into different parties</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>OFFICE HOURS</strong></p>
+<ul>
+<li>Monday 11:00-12:00</li>
+<li>Tuesday 1:00-3:00</li>
+<li>Ellison 2817</li>
+</ul>
+<h1 id="lecture-12">Lecture 12</h1>
+<p><strong>Midterm</strong></p>
+<ul>
+<li>6 of 9 short answer</li>
+<li>4 from LGSA</li>
+<li>4 from lecture</li>
+<li>1 from both</li>
+<li>ch 6 8 9 10 11</li>
+</ul>
+<p><strong>News Today</strong></p>
+<ul>
+<li>Roger Stone</li>
+<li>letter to Barr - resign</li>
+</ul>
+<p><strong>Last time</strong></p>
+<ul>
+<li>trend - public has more of a role in elections</li>
+<li>we have more frequent elections</li>
+<li>problem: want to find the right amount of voting so that pb
+<ul>
+<li>cynical, money, meaningful</li>
+<li>not prepared to be involved</li>
+</ul></li>
+</ul>
+<h2 id="public-voting-for-the-president">Public Voting for the President</h2>
+<p>dem free press, rule of law, how you pick eec official not most important</p>
+<ul>
+<li>things about our democracy
+<ul>
+<li>billl of rights - popular</li>
+<li>sep powers, judicial review - popularized</li>
+<li>But no country has copied our electoral college system</li>
+</ul></li>
+</ul>
+<p><strong>Electoral College</strong></p>
+<ul>
+<li>Looks can be deceiving</li>
+</ul>
+<h3 id="electors">Electors</h3>
+<ul>
+<li><p>per state</p></li>
+<li><p>#senators + reps</p></li>
+<li><p>Legislature can appoint delegates in any way it wants, who vote for (-president)</p></li>
+<li><p>[1804] - [M12]</p>
+<ul>
+<li>electors vote for president and VP</li>
+<li>rather than for 2 people</li>
+<li>VA 1800 - popular vote, electors follow outcome</li>
+<li>1820 - half of states had pop vote</li>
+<li>1828 - almost all states have pop vote</li>
+</ul></li>
+<li><p>[M22][1951]</p>
+<ul>
+<li>presidents can only serve for 2 terms, or 1 if they were substitute for more than 2 years.</li>
+</ul></li>
+<li><p>[A1] States control election rules and Procedures</p>
+<!-- todo Q sounds like votes dont actualy go "for" electors, they just signify
+    what voters want --></li>
+<li><p>D Electors are ___?</p>
+<ul>
+<li>nominated?</li>
+</ul></li>
+<li><p>R Electors are ___?</p>
+<ul>
+<li>nominated?</li>
+</ul></li>
+<li><p>There’s no pres. under the constitution technically</p></li>
+<li><p>stuff</p>
+<ul>
+<li>state decides waht laws govern delegats</li>
+<li>there are competing slates of electors, one slate for each party/state</li>
+</ul></li>
+</ul>
+<h2 id="electoral-college-math">Electoral College Math</h2>
+<ul>
+<li>100 Senators + 435 Reps + 3 for DC (23rd Amend) = 538 Electors Total</li>
+<li>Majority = (538 / 2 ) + 1 = 270 Electors to Win</li>
+<li>Plurality Winner Take All</li>
+<li>Investment – goes to swing states</li>
+</ul>
+<p>historical</p>
+<ul>
+<li><p>1824 - House chose dude who didnt even get plurality</p></li>
+<li><p>up until 2000 - something about majorites</p></li>
+<li><p>EC typically not close (except 2000, 2016)</p></li>
+<li><p>2000 - Bush &amp; Gore</p>
+<ul>
+<li>disaster</li>
+<li>EC went Bush 271 v Gore 266</li>
+</ul></li>
+<li><p>2012</p></li>
+<li><p>2016</p>
+<ul>
+<li>“looks like a 19th century case” where popular vote “diverged”</li>
+<li>flips</li>
+</ul></li>
+<li><p>swing states</p></li>
+<li></li>
+</ul>
+<hr />
+<h1 id="links">Links</h1>
+<p>Tags: years, amendments, <span class="citation" data-cites="now">@now</span> for current things</p>
 </article>
 </body>
 </html>
