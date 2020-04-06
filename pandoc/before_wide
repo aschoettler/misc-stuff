@@ -1,0 +1,17 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .markdown-body {
+    box-sizing: border-box;
+    min-width: 500px;
+    max-width: 25000px;
+    margin: 0 auto;
+    padding: 45px;
+  }
+  @media (max-width: 25000px) {
+    .markdown-body {
+      padding: 15px;
+    }
+  }
+</style>
+<article class="markdown-body">
+
